@@ -1,14 +1,16 @@
 import requests
 import json
 from bs4 import BeautifulSoup
+from selenium import webdriver
 
-url = "https://profil.gittigidiyor.com/teknorya"
-r = requests.get(url)
-soup = BeautifulSoup(r.content, "lxml")
+browser = webdriver.Safari()
+browser.get("https://profil.gittigidiyor.com/teknorya")
+soup = BeautifulSoup(browser.page_source, "html.parser")
+
 
 review = soup.find("span", attrs={"class" : "total_evaluation"})
 rate = soup.find("span", attrs={"class" : "positive_percentage"})
-criteria = soup.find("div", attrs={"class" : "col_width-8of16_color_8e"})
+criteria = soup.find_all("div", attrs={"class" : "col width-8of16 color_8e"})[1]
 badge = str(soup.find("div", attrs={"class" : "badge_container"}))
 
 if badge.find("19") != -1:
@@ -18,12 +20,10 @@ elif badge.find("18") != -1:
 else:
     badge2 = "Rozet yok"
 
-#ornek kullanim: filmTablosu = soup.find("table".attrs={"class:"ustcizgi"}).select("tr:nth-of-type(2) > td > table:nth-of-type(3) > tr")
-#bu ornek class degeri ustcizgi olan table altindaki 2.tr'nin altindaki td'nin altindaki 3.table'in altindaki tr'yi cekmeye yarar
 
 numberOfReviews = review.text.strip()
 rateScore = rate.text.strip()
-criterias = criteria
+criterias = criteria.text
 
 file = open("output.json", "w")
 output = {"Teknorya": {"Number of reviews":numberOfReviews, "Positive score rate":rateScore, "criterias":criterias, "badge": badge2}}
