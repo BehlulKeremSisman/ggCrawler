@@ -1,27 +1,50 @@
 {
-  "stores": {
-    "https://profil.gittigidiyor.com/teknorya": {
-      "numberOfReviewsMonths": "3017",
-      "positiveScoreRate": "%98",
-      "criterias": {
-        "criteria": {
-          "label1": "\u00dcr\u00fcn\u00fcn a\u00e7\u0131klamalarda anlat\u0131ld\u0131\u011f\u0131 gibi olmas\u0131",
-          "averagePoint1": "4.8 / 5",
-          "numberOfReviews1": "1716",
-          "label2": "Sat\u0131c\u0131n\u0131n al\u0131c\u0131yla olan ileti\u015fimi",
-          "averagePoint2": "4.7 / 5",
-          "numberOfReviews2": "1716",
-          "label3": "\u00dcr\u00fcn\u00fcn zaman\u0131nda kargoya verilmesi",
-          "averagePoint3": "4.8 / 5",
-          "numberOfReviews3": "1716",
-          "label4": "\u00dcr\u00fcn\u00fcn kargo \u00fccreti",
-          "averagePoint4": "4.4 / 5",
-          "numberOfReviews4": "476",
-          "label5": "\u00dcr\u00fcn\u00fcn kargo (ta\u015f\u0131ma, teslimat) hizmeti",
-          "averagePoint5": "4.6 / 5",
-          "numberOfReviews5": "1716"
-        }
+  "https://profil.gittigidiyor.com/teknorya": {
+    "numberOfReviewsMonths": "3017",
+    "positiveScoreRate": "%98",
+    "criterias": {
+      "criteria": {
+        "label1": "\u00dcr\u00fcn\u00fcn a\u00e7\u0131klamalarda anlat\u0131ld\u0131\u011f\u0131 gibi olmas\u0131",
+        "averagePoint1": "4.8 / 5",
+        "numberOfReviews1": "1716",
+        "label2": "Sat\u0131c\u0131n\u0131n al\u0131c\u0131yla olan ileti\u015fimi",
+        "averagePoint2": "4.7 / 5",
+        "numberOfReviews2": "1716",
+        "label3": "\u00dcr\u00fcn\u00fcn zaman\u0131nda kargoya verilmesi",
+        "averagePoint3": "4.8 / 5",
+        "numberOfReviews3": "1716",
+        "label4": "\u00dcr\u00fcn\u00fcn kargo \u00fccreti",
+        "averagePoint4": "4.4 / 5",
+        "numberOfReviews4": "476",
+        "label5": "\u00dcr\u00fcn\u00fcn kargo (ta\u015f\u0131ma, teslimat) hizmeti",
+        "averagePoint5": "4.6 / 5",
+        "numberOfReviews5": "1716"
+      }
+    }
+  }
+} {
+  "https://profil.gittigidiyor.com/eslimtr": {
+    "numberOfReviewsMonths": "1060",
+    "positiveScoreRate": "%99",
+    "criterias": {
+      "criteria": {
+        "label1": "\u00dcr\u00fcn\u00fcn a\u00e7\u0131klamalarda anlat\u0131ld\u0131\u011f\u0131 gibi olmas\u0131",
+        "averagePoint1": "4.7 / 5",
+        "numberOfReviews1": "714",
+        "label2": "Sat\u0131c\u0131n\u0131n al\u0131c\u0131yla olan ileti\u015fimi",
+        "averagePoint2": "4.7 / 5",
+        "numberOfReviews2": "714",
+        "label3": "\u00dcr\u00fcn\u00fcn zaman\u0131nda kargoya verilmesi",
+        "averagePoint3": "4.8 / 5",
+        "numberOfReviews3": "714",
+        "label4": "\u00dcr\u00fcn\u00fcn kargo \u00fccreti",
+        "averagePoint4": "4.3 / 5",
+        "numberOfReviews4": "22",
+        "label5": "\u00dcr\u00fcn\u00fcn kargo (ta\u015f\u0131ma, teslimat) hizmeti",
+        "averagePoint5": "4.7 / 5",
+        "numberOfReviews5": "714"
       }
     }
   }
 }
+{"https://profil.gittigidiyor.com/teknorya": {"numberOfReviewsMonths": "3017", "positiveScoreRate": "%98", "criterias": {"criteria": {"label1": "\u00dcr\u00fcn\u00fcn a\u00e7\u0131klamalarda anlat\u0131ld\u0131\u011f\u0131 gibi olmas\u0131", "averagePoint1": "4.8 / 5", "numberOfReviews1": "1716", "label2": "Sat\u0131c\u0131n\u0131n al\u0131c\u0131yla olan ileti\u015fimi", "averagePoint2": "4.7 / 5", "numberOfReviews2": "1716", "label3": "\u00dcr\u00fcn\u00fcn zaman\u0131nda kargoya verilmesi", "averagePoint3": "4.8 / 5", "numberOfReviews3": "1716", "label4": "\u00dcr\u00fcn\u00fcn kargo \u00fccreti", "averagePoint4": "4.4 / 5", "numberOfReviews4": "476", "label5": "\u00dcr\u00fcn\u00fcn kargo (ta\u015f\u0131ma, teslimat) hizmeti", "averagePoint5": "4.6 / 5", "numberOfReviews5": "1716"}}}}{"https://profil.gittigidiyor.com/teknorya": {"numberOfReviewsMonths": "3017", "positiveScoreRate": "%98", "criterias": {"criteria": {"label1": "\u00dcr\u00fcn\u00fcn a\u00e7\u0131klamalarda anlat\u0131ld\u0131\u011f\u0131 gibi olmas\u0131", "averagePoint1": "4.8 / 5", "numberOfReviews1": "1716", "label2": "Sat\u0131c\u0131n\u0131n al\u0131c\u0131yla olan ileti\u015fimi", "averagePoint2": "4.7 / 5", "numberOfReviews2": "1716", "label3": "\u00dcr\u00fcn\u00fcn zaman\u0131nda kargoya verilmesi", "averagePoint3": "4.8 / 5", "numberOfReviews3": "1716", "label4": "\u00dcr\u00fcn\u00fcn kargo \u00fccreti", "averagePoint4": "4.4 / 5", "numberOfReviews4": "476", "label5": "\u00dcr\u00fcn\u00fcn kargo (ta\u015f\u0131ma, teslimat) hizmeti", "averagePoint5": "4.6 / 5", "numberOfReviews5": "1716"}}}}{"https://profil.gittigidiyor.com/teknorya": {"numberOfReviewsMonths": "3017", "positiveScoreRate": "%98", "criterias": {"criteria": {"label1": "\u00dcr\u00fcn\u00fcn a\u00e7\u0131klamalarda anlat\u0131ld\u0131\u011f\u0131 gibi olmas\u0131", "averagePoint1": "4.8 / 5", "numberOfReviews1": "1716", "label2": "Sat\u0131c\u0131n\u0131n al\u0131c\u0131yla olan ileti\u015fimi", "averagePoint2": "4.7 / 5", "numberOfReviews2": "1716", "label3": "\u00dcr\u00fcn\u00fcn zaman\u0131nda kargoya verilmesi", "averagePoint3": "4.8 / 5", "numberOfReviews3": "1716", "label4": "\u00dcr\u00fcn\u00fcn kargo \u00fccreti", "averagePoint4": "4.4 / 5", "numberOfReviews4": "476", "label5": "\u00dcr\u00fcn\u00fcn kargo (ta\u015f\u0131ma, teslimat) hizmeti", "averagePoint5": "4.6 / 5", "numberOfReviews5": "1716"}}}}{"https://profil.gittigidiyor.com/eslimtr": {"numberOfReviewsMonths": "1060", "positiveScoreRate": "%99", "criterias": {"criteria": {"label1": "\u00dcr\u00fcn\u00fcn a\u00e7\u0131klamalarda anlat\u0131ld\u0131\u011f\u0131 gibi olmas\u0131", "averagePoint1": "4.7 / 5", "numberOfReviews1": "714", "label2": "Sat\u0131c\u0131n\u0131n al\u0131c\u0131yla olan ileti\u015fimi", "averagePoint2": "4.7 / 5", "numberOfReviews2": "714", "label3": "\u00dcr\u00fcn\u00fcn zaman\u0131nda kargoya verilmesi", "averagePoint3": "4.8 / 5", "numberOfReviews3": "714", "label4": "\u00dcr\u00fcn\u00fcn kargo \u00fccreti", "averagePoint4": "4.3 / 5", "numberOfReviews4": "22", "label5": "\u00dcr\u00fcn\u00fcn kargo (ta\u015f\u0131ma, teslimat) hizmeti", "averagePoint5": "4.7 / 5", "numberOfReviews5": "714"}}}}{"https://profil.gittigidiyor.com/teknorya": {"numberOfReviewsMonths": "3017", "positiveScoreRate": "%98", "criterias": {"criteria": {"label1": "\u00dcr\u00fcn\u00fcn a\u00e7\u0131klamalarda anlat\u0131ld\u0131\u011f\u0131 gibi olmas\u0131", "averagePoint1": "4.8 / 5", "numberOfReviews1": "1716", "label2": "Sat\u0131c\u0131n\u0131n al\u0131c\u0131yla olan ileti\u015fimi", "averagePoint2": "4.7 / 5", "numberOfReviews2": "1716", "label3": "\u00dcr\u00fcn\u00fcn zaman\u0131nda kargoya verilmesi", "averagePoint3": "4.8 / 5", "numberOfReviews3": "1716", "label4": "\u00dcr\u00fcn\u00fcn kargo \u00fccreti", "averagePoint4": "4.4 / 5", "numberOfReviews4": "476", "label5": "\u00dcr\u00fcn\u00fcn kargo (ta\u015f\u0131ma, teslimat) hizmeti", "averagePoint5": "4.6 / 5", "numberOfReviews5": "1716"}}}}{"https://profil.gittigidiyor.com/teknorya": {"numberOfReviewsMonths": "3017", "positiveScoreRate": "%98", "criterias": {"criteria": {"label1": "\u00dcr\u00fcn\u00fcn a\u00e7\u0131klamalarda anlat\u0131ld\u0131\u011f\u0131 gibi olmas\u0131", "averagePoint1": "4.8 / 5", "numberOfReviews1": "1716", "label2": "Sat\u0131c\u0131n\u0131n al\u0131c\u0131yla olan ileti\u015fimi", "averagePoint2": "4.7 / 5", "numberOfReviews2": "1716", "label3": "\u00dcr\u00fcn\u00fcn zaman\u0131nda kargoya verilmesi", "averagePoint3": "4.8 / 5", "numberOfReviews3": "1716", "label4": "\u00dcr\u00fcn\u00fcn kargo \u00fccreti", "averagePoint4": "4.4 / 5", "numberOfReviews4": "476", "label5": "\u00dcr\u00fcn\u00fcn kargo (ta\u015f\u0131ma, teslimat) hizmeti", "averagePoint5": "4.6 / 5", "numberOfReviews5": "1716"}}}}

@@ -1,11 +1,16 @@
+import sys
 import requests
 import json
 from bs4 import BeautifulSoup
 from selenium import webdriver
 
+storename = str(sys.argv[1])
+
+#--------------------------------------------------------------    stores    --------------------------------------------------------------
+
 browser = webdriver.Safari()
-storename = "https://profil.gittigidiyor.com/teknorya"
-browser.get(storename)
+storelink = "https://profil.gittigidiyor.com/" + storename
+browser.get(storelink)
 
 soup = BeautifulSoup(browser.page_source, "html.parser")
 
@@ -14,7 +19,6 @@ rate = soup.find("span", attrs={"class" : "positive_percentage"})
 criterias = soup.find_all("div", attrs={"class" : "col width-8of16 color_8e"})
 avgPoints = soup.find_all("div", attrs={"class" : "col width-4of16 puan_y"})
 numReviews = soup.find_all("div", attrs={"class" : "col width-4of16 puan_count"})
-
 
 numberOfReviewsMonths = review.text.strip()
 rateScore = rate.text.strip()
@@ -35,11 +39,9 @@ for numReview in numReviews:
     countnumReview = countnumReview + 1
 
 
+file_stores = open("stores.json", "a")
 
-file = open("stores.json", "w")
-
-output = {"stores": {
-             storename: {
+output_stores = { storelink: {
                 "numberOfReviewsMonths" : numberOfReviewsMonths,
                 "positiveScoreRate" : rateScore,
                 "criterias": {
@@ -52,24 +54,30 @@ output = {"stores": {
                     }
                 }
              }
-         }}
+         }
 
+json.dump(output_stores, file_stores)
+file_stores.close()
 
-json.dump(output, file)
-file.close()
+#--------------------------------------------------------------    products    --------------------------------------------------------------
 
-
-#Product
-urlProduct = "https://www.gittigidiyor.com/arama/?satici=teknorya"
+urlProduct = "https://www.gittigidiyor.com/arama/?satici=" + storename
 r2 = requests.get(urlProduct)
 soup2 = BeautifulSoup(r2.content, "lxml")
-file = open("urunler.json", "w")
+filename = "urunler_" + storename + ".json"
+file_products = open(filename, "a")
 productCount = soup2.find_all("p", attrs={"itemprop" : "price"})
 i=0
 for i in range(len(productCount)):
     productName = soup2.find_all("span", attrs={"itemprop" : "name"})[i].text
     productPrice = soup2.find_all("p", attrs={"itemprop" : "price"})[i].text.strip()
-    urunler = {"TeknoryaUrunler": {"Name":productName, "Price":productPrice}}
-    json.dump(urunler, file)
+    productShipment = soup2.find_all("li", attrs={"class" : "shippingFree"})[i].text.strip()
+    output_products = { "product": {
+                            "name" : productName,
+                            "price" : productPrice,
+                            "shipment" : productShipment
+                     }}
 
-file.close()
+    json.dump(output_products, file_products)
+
+file_products.close()
