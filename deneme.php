@@ -7,7 +7,7 @@
 
 <?php
 
-$string = file_get_contents("eslimtr_products.json");
+$string = file_get_contents("teknorya_products.json");
 $json_a = json_decode($string, true);
 
 foreach ($json_a as $person_name => $person_a) {
@@ -47,15 +47,20 @@ foreach ($json_a as $person_name => $person_a) {
     <p>Criter1: <?php echo $str1  ?></p>
     <?php $str1 = $person_a['criterias']['criteria']['numberOfReviews5']; ?>
     <p>Criter1: <?php echo $str1  ?></p>
+
 */
 
-
-  for($i=0; $i<50; $i++){
+  for($i=0; $i<48; $i++){
     $str1 = $person_a['product'][$i]['name']; ?>
-    <p>Number of reviews: <?php echo $str1  ?></p>
-   <?php $str1 = $person_a['product'][$i]['price']; ?>
-    <p>Positive score rate: <?php echo $str1  ?></p><?php
-  }
+    <p>Name: <?php echo $str1  ?></p>
+   <?php $str1 = $person_a['product'][$i]['category']; ?>
+    <p>Category: <?php echo $str1  ?></p><?php
+    $str1 = $person_a['product'][$i]['price']; ?>
+    <p>Price: <?php echo $str1  ?></p><?php
+   $str1 = $person_a['product'][$i]['shipment']; ?>
+    <p>Shipment: <?php echo $str1  ?></p><?php
+
+   }
 ?>
 <?php
 }

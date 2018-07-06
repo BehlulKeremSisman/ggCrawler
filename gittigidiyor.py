@@ -11,32 +11,23 @@ storename = str(sys.argv[1])
 browser = webdriver.Safari()
 storelink = "https://profil.gittigidiyor.com/" + storename
 browser.get(storelink)
-
 soup = BeautifulSoup(browser.page_source, "html.parser")
 
 review = soup.find("span", attrs={"class" : "total_evaluation"})
 rate = soup.find("span", attrs={"class" : "positive_percentage"})
-criterias = soup.find_all("div", attrs={"class" : "col width-8of16 color_8e"})
-avgPoints = soup.find_all("div", attrs={"class" : "col width-4of16 puan_y"})
-numReviews = soup.find_all("div", attrs={"class" : "col width-4of16 puan_count"})
-
 numberOfReviewsMonths = review.text.strip()
 rateScore = rate.text.strip()
-criteria_array = []
-countCriteria = 0
-for criteria in criterias:
+
+numReviews_array, avgPoints_array, criteria_array = [], [], []
+numCriteria = soup.find_all("div", attrs={"class" : "col width-4of16 puan_count"})
+k=0
+for k in range(len(numCriteria)):
+    criteria = soup.find_all("div", attrs={"class" : "col width-8of16 color_8e"})[k]
+    avgPoint = soup.find_all("div", attrs={"class" : "col width-4of16 puan_y"})[k]
+    numReview = soup.find_all("div", attrs={"class" : "col width-4of16 puan_count"})[k]
     criteria_array.append(criteria.text)
-    countCriteria = countCriteria + 1
-avgPoints_array = []
-countavgPoint = 0
-for avgPoint in avgPoints:
     avgPoints_array.append(avgPoint.text)
-    countavgPoint = countavgPoint + 1
-numReviews_array = []
-countnumReview = 0
-for numReview in numReviews:
     numReviews_array.append(numReview.text)
-    countnumReview = countnumReview + 1
 
 filename_store = storename + "_store" + ".json"
 file_store = open(filename_store, "w")
@@ -61,23 +52,36 @@ file_store.close()
 
 #--------------------------------------------------------------    products    --------------------------------------------------------------
 
-urlProduct = "https://www.gittigidiyor.com/arama/?satici=" + storename
-r2 = requests.get(urlProduct)
+urlProducts = "https://www.gittigidiyor.com/arama/?satici=" + storename
+r2 = requests.get(urlProducts)
 soup2 = BeautifulSoup(r2.content, "lxml")
 filename_products = storename + "_products" + ".json"
 productCount = soup2.find_all("p", attrs={"itemprop" : "price"})
 
-productNames, productPrices, productShipments = [], [], []
+productNames, productPrices = [], []
 i=0
 for i in range(len(productCount)):
     productName = soup2.find_all("span", attrs={"itemprop" : "name"})[i].text
     productPrice = soup2.find_all("p", attrs={"itemprop" : "price"})[i].text.strip()
-    #productShipment = soup2.find_all("li", attrs={"class" : "shippingFree"})[i].text.strip()
     productNames.append(productName)
     productPrices.append(productPrice)
-    #productShipments.append(productShipment)
 
 
-json_data_product = { "products" : {"product" : [{"name" : n, "price" : p} for n,p in zip(productNames,productPrices)]}}
+productCategories, productShipments = [], []
+urlProduct = soup2.find("ul", attrs={"class" : "catalog-view clearfix products-container"})
+for a in urlProduct.find_all('a', href=True):
+    urlEachProduct = "https:" + a['href']
+    r3 = requests.get(urlEachProduct)
+    soup3 = BeautifulSoup(r3.content, "lxml")
+    productCategory = soup3.find("ul", attrs={"class" : "clearfix hidden-m hidden-breadcrumb robot-productPage-breadcrumb-hiddenBreadCrumb"}).text.strip()
+    productCategories.append(productCategory)
+    productShipment = soup3.find("div", attrs={"class" : "clearfix CargoInfos"}).text.strip()
+    productShipments.append(productShipment)
+
+
+json_data_product = { "products" : {"product" : [{"name" : n, "price" : p, "category" : c, "shipment" : s} for n,p,c,s in zip(productNames,productPrices,productCategories,productShipments)]}}
 with open(filename_products, 'w') as f:
     json.dump(json_data_product, f,ensure_ascii=False)
+
+
+#--------------------------------------------------------------    comments    --------------------------------------------------------------
