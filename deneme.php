@@ -7,7 +7,7 @@
 
 <?php
 
-$string = file_get_contents("teknorya_products.json");
+$string = file_get_contents("incehesap_products.json");
 $json_a = json_decode($string, true);
 
 foreach ($json_a as $person_name => $person_a) {
@@ -50,7 +50,7 @@ foreach ($json_a as $person_name => $person_a) {
 
 */
 
-  for($i=0; $i<48; $i++){
+  for($i=0; $i<234; $i++){
     $str1 = $person_a['product'][$i]['name']; ?>
     <p>Name: <?php echo $str1  ?></p>
    <?php $str1 = $person_a['product'][$i]['category']; ?>

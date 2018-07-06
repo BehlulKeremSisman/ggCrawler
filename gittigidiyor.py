@@ -52,12 +52,15 @@ file_store.close()
 
 #--------------------------------------------------------------    products    --------------------------------------------------------------
 
-urlProducts = "https://www.gittigidiyor.com/arama/?satici=" + storename
+arama = "/arama/?satici="
+urlProducts = "https://www.gittigidiyor.com" + arama + storename
 r2 = requests.get(urlProducts)
 soup2 = BeautifulSoup(r2.content, "lxml")
 filename_products = storename + "_products" + ".json"
 productCount = soup2.find_all("p", attrs={"itemprop" : "price"})
 
+
+#1.page name,price
 productNames, productPrices = [], []
 i=0
 for i in range(len(productCount)):
@@ -67,6 +70,8 @@ for i in range(len(productCount)):
     productPrices.append(productPrice)
 
 
+#1.page category,shipment
+count=0
 productCategories, productShipments = [], []
 urlProduct = soup2.find("ul", attrs={"class" : "catalog-view clearfix products-container"})
 for a in urlProduct.find_all('a', href=True):
@@ -77,8 +82,55 @@ for a in urlProduct.find_all('a', href=True):
     productCategories.append(productCategory)
     productShipment = soup3.find("div", attrs={"class" : "clearfix CargoInfos"}).text.strip()
     productShipments.append(productShipment)
+    count = count + 1
+print(count)
 
 
+#nextpages for name,category,shipment,price
+urlNewPage = soup2.find("li", attrs={"class" : "next-link"})
+next_page = urlNewPage.find('a', href=True)
+next_page_str = next_page['href']
+print (next_page_str)
+sayfa = next_page_str.split(storename,1)[1]
+print (sayfa)
+
+while(next_page != None):
+    urlEachProduct = urlProducts + sayfa
+    r2_next = requests.get(urlEachProduct)
+    soup2_next = BeautifulSoup(r2_next.content, "lxml")
+    i_next=0
+    productCount = soup2_next.find_all("p", attrs={"itemprop" : "price"})
+    for i_next in range(len(productCount)):
+        productName = soup2_next.find_all("span", attrs={"itemprop" : "name"})[i_next].text
+        productPrice = soup2_next.find_all("p", attrs={"itemprop" : "price"})[i_next].text.strip()
+        productNames.append(productName)
+        productPrices.append(productPrice)
+
+    urlEachProduct = urlProducts + sayfa
+    r_next = requests.get(urlEachProduct)
+    soup_next = BeautifulSoup(r_next.content, "lxml")
+    urlProduct_next = soup_next.find("ul", attrs={"class" : "catalog-view clearfix products-container"})
+    for a in urlProduct_next.find_all('a', href=True):
+            urlEachProduct_next = "https:" + a['href']
+            r7 = requests.get(urlEachProduct_next)
+            soup7 = BeautifulSoup(r7.content, "lxml")
+            productCategory = soup7.find("ul", attrs={"class" : "clearfix hidden-m hidden-breadcrumb robot-productPage-breadcrumb-hiddenBreadCrumb"}).text.strip()
+            productCategories.append(productCategory)
+            productShipment = soup7.find("div", attrs={"class" : "clearfix CargoInfos"}).text.strip()
+            productShipments.append(productShipment)
+            count = count + 1
+            print(str(sayfa) + ". sayfadaki " + str(count) + ". ürün işleniyor..")
+    urlNewPage = soup_next.find("li", attrs={"class" : "next-link"})
+    if urlNewPage == None:
+        break
+    next_page = urlNewPage.find('a', href=True)
+    next_page_str = next_page['href']
+    print (next_page_str)
+    sayfa = next_page_str.split(storename,1)[1]
+    print (str(sayfa) + ". ürün sayfasına geçildi.")
+
+
+#store json
 json_data_product = { "products" : {"product" : [{"name" : n, "price" : p, "category" : c, "shipment" : s} for n,p,c,s in zip(productNames,productPrices,productCategories,productShipments)]}}
 with open(filename_products, 'w') as f:
     json.dump(json_data_product, f,ensure_ascii=False)
