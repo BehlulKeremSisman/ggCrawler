@@ -38,10 +38,10 @@ for numReview in numReviews:
     numReviews_array.append(numReview.text)
     countnumReview = countnumReview + 1
 
+filename_store = storename + "_store" + ".json"
+file_store = open(filename_store, "w")
 
-file_stores = open("stores.json", "a")
-
-output_stores = { storelink: {
+json_data_store = { storelink: {
                 "numberOfReviewsMonths" : numberOfReviewsMonths,
                 "positiveScoreRate" : rateScore,
                 "criterias": {
@@ -56,28 +56,28 @@ output_stores = { storelink: {
              }
          }
 
-json.dump(output_stores, file_stores)
-file_stores.close()
+json.dump(json_data_store, file_store)
+file_store.close()
 
 #--------------------------------------------------------------    products    --------------------------------------------------------------
 
 urlProduct = "https://www.gittigidiyor.com/arama/?satici=" + storename
 r2 = requests.get(urlProduct)
 soup2 = BeautifulSoup(r2.content, "lxml")
-filename = "urunler_" + storename + ".json"
-file_products = open(filename, "a")
+filename_products = storename + "_products" + ".json"
 productCount = soup2.find_all("p", attrs={"itemprop" : "price"})
+
+productNames, productPrices, productShipments = [], [], []
 i=0
 for i in range(len(productCount)):
     productName = soup2.find_all("span", attrs={"itemprop" : "name"})[i].text
     productPrice = soup2.find_all("p", attrs={"itemprop" : "price"})[i].text.strip()
-    productShipment = soup2.find_all("li", attrs={"class" : "shippingFree"})[i].text.strip()
-    output_products = { "product": {
-                            "name" : productName,
-                            "price" : productPrice,
-                            "shipment" : productShipment
-                     }}
+    #productShipment = soup2.find_all("li", attrs={"class" : "shippingFree"})[i].text.strip()
+    productNames.append(productName)
+    productPrices.append(productPrice)
+    #productShipments.append(productShipment)
 
-    json.dump(output_products, file_products)
 
-file_products.close()
+json_data_product = { "products" : {"product" : [{"name" : n, "price" : p} for n,p in zip(productNames,productPrices)]}}
+with open(filename_products, 'w') as f:
+    json.dump(json_data_product, f,ensure_ascii=False)
