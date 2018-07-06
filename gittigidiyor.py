@@ -137,3 +137,67 @@ with open(filename_products, 'w') as f:
 
 
 #--------------------------------------------------------------    comments    --------------------------------------------------------------
+globalVar = 0 #sayfa sayisi
+var = 0
+daTeSayisi = 0 #2018 içeren Date sayisi
+while var < 100:
+	x = str(var) 
+	url_Comments= "https://profil.gittigidiyor.com/"+storename+"/aldigi-yorumlar/satis?sf=" + x + "#yorum"
+	r_Comments = requests.get(url_Comments)
+	soup_Comments = BeautifulSoup(r_Comments.content, "lxml")
+	dates_kontrol = soup_Comments.find_all("p",attrs={"class":"mt10"})	
+	for daTe in dates_kontrol:
+		daTe_str = str(daTe.text)
+		if "/2017" in daTe_str:
+			var = 100	
+			break
+		if "/2018" not in daTe_str:
+			continue
+		else:
+			daTeSayisi = daTeSayisi + 1
+			continue
+	globalVar = globalVar + 1	
+	var = var + 1		
+#print(daTeSayisi)
+#print(globalVar)
+
+comments_array, reviewers_array, dates_array,productsName_array, mood_array = [], [], [], [],[]
+
+for j in range(globalVar):
+	i=0
+	m = str(j) 
+	url= "https://profil.gittigidiyor.com/"+storename+"/aldigi-yorumlar/satis?sf=" + m + "#yorum"
+	#print(url)
+	r = requests.get(url)
+	soup = BeautifulSoup(r.content, "lxml")
+
+	
+	for i in range(20): 
+		productName = soup.find_all("div",attrs={"class":"pl12"})[i].text
+		mood = soup.find_all("div",attrs={"class":"col width-1of24 mt5"})[i].text
+		reviewer = soup.find_all("p", attrs={"class":"bold"})[i].text
+		date = soup.find_all("p",attrs={"class":"mt10"})[i].text
+		comment = soup.find_all("p",attrs={"class":"comment_content"})[i].text.split()
+		comments_array.append(comment)
+		if "Profil" not in date:
+			dates_array.append(date)
+		reviewers_array.append(reviewer)
+		if "Tüm" not in productName:
+			productsName_array.append(productName)
+		stringMood = str(mood)
+		if stringMood.find('prf09') != -1:
+			mood_array.append("Mutlu")
+		elif stringMood.find('prf10') != -1:
+			mood_array.append("Üzgün")
+		else:
+			mood_array.append("Kızgın")
+		
+	i = i + 1
+
+filename_comments = storename + "_comments" + ".json" 
+file_comments = open(filename_comments, "w")
+ 
+json_data_comments = { "comments": { "comment" : [{"reviewer": r, "dateTime": d, "productName": p , "mood" : m, "text": t} for r,d,p,m,t in zip (reviewers_array,dates_array,productsName_array,mood_array,comments_array)]}}
+with open(filename_comments,'w') as f:
+	json.dump(json_data_comments, f,ensure_ascii=False)
+
