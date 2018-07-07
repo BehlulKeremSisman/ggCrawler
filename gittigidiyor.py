@@ -137,10 +137,10 @@ with open(filename_products, 'w') as f:
 
 
 #--------------------------------------------------------------    comments    --------------------------------------------------------------
-globalVar = 0 #sayfa sayisi
-var = 0
+sayfaSayisi = 0 
+var = 1
 daTeSayisi = 0 #2018 içeren Date sayisi
-while var < 100:
+while var < 1000:
 	x = str(var) 
 	url_Comments= "https://profil.gittigidiyor.com/"+storename+"/aldigi-yorumlar/satis?sf=" + x + "#yorum"
 	r_Comments = requests.get(url_Comments)
@@ -149,41 +149,38 @@ while var < 100:
 	for daTe in dates_kontrol:
 		daTe_str = str(daTe.text)
 		if "/2017" in daTe_str:
-			var = 100	
+			var = 1000	
 			break
 		if "/2018" not in daTe_str:
 			continue
 		else:
 			daTeSayisi = daTeSayisi + 1
 			continue
-	globalVar = globalVar + 1	
+	sayfaSayisi = sayfaSayisi + 1	
 	var = var + 1		
-#print(daTeSayisi)
-#print(globalVar)
+print(daTeSayisi)
+print(sayfaSayisi)
+
 
 comments_array, reviewers_array, dates_array,productsName_array, mood_array = [], [], [], [],[]
-
-for j in range(globalVar):
-	i=0
+j=1 #sayfa
+q=0 #dateler için
+p=0 #productName için
+while j < sayfaSayisi:
 	m = str(j) 
 	url= "https://profil.gittigidiyor.com/"+storename+"/aldigi-yorumlar/satis?sf=" + m + "#yorum"
 	#print(url)
 	r = requests.get(url)
 	soup = BeautifulSoup(r.content, "lxml")
-
-	
+	dates = soup.find_all("p",attrs={"class":"mt10"})
+	productNames = soup.find_all("div",attrs={"class":"pl12"})
+	j = j + 1
 	for i in range(20): 
-		productName = soup.find_all("div",attrs={"class":"pl12"})[i].text
-		mood = soup.find_all("div",attrs={"class":"col width-1of24 mt5"})[i].text
+		mood = soup.find_all("div",attrs={"class":"col width-1of24 mt5"})[i]
 		reviewer = soup.find_all("p", attrs={"class":"bold"})[i].text
-		date = soup.find_all("p",attrs={"class":"mt10"})[i].text
 		comment = soup.find_all("p",attrs={"class":"comment_content"})[i].text.split()
 		comments_array.append(comment)
-		if "Profil" not in date:
-			dates_array.append(date)
 		reviewers_array.append(reviewer)
-		if "Tüm" not in productName:
-			productsName_array.append(productName)
 		stringMood = str(mood)
 		if stringMood.find('prf09') != -1:
 			mood_array.append("Mutlu")
@@ -191,8 +188,23 @@ for j in range(globalVar):
 			mood_array.append("Üzgün")
 		else:
 			mood_array.append("Kızgın")
-		
-	i = i + 1
+
+	while q < len(dates):
+		date = soup.find_all("p",attrs={"class":"mt10"})[q].text
+		q = q + 1
+		if "Profil" in date:
+			continue
+		if "/2018" not in date:
+			continue		
+		dates_array.append(str(date))
+
+	while p < len(productNames):
+		productName = soup.find_all("div",attrs={"class":"pl12"})[p].text
+		p = p + 1
+		if "Tüm" in productName:
+			continue
+		productsName_array.append(productName)
+			
 
 filename_comments = storename + "_comments" + ".json" 
 file_comments = open(filename_comments, "w")
