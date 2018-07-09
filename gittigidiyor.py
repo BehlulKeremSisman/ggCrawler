@@ -208,11 +208,14 @@ while j < sayfaSayisi:
 		if "Tüm" in productName:
 			continue
 		productsName_array.append(productName)
+	q=0
+	p=0
 
 
-filename_comments = storename + "_comments" + ".json"
+filename_comments = storename + "_comments" + ".json" 
 file_comments = open(filename_comments, "w")
-
+ 
 json_data_comments = { "comments": { "comment" : [{"reviewer": r, "dateTime": d, "productName": p , "mood" : m, "text": t} for r,d,p,m,t in zip (reviewers_array,dates_array,productsName_array,mood_array,comments_array)]}}
 with open(filename_comments,'w') as f:
 	json.dump(json_data_comments, f,ensure_ascii=False)
+
