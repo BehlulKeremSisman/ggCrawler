@@ -7,7 +7,7 @@
 
 <?php
 
-$string = file_get_contents("incehesap_products.json");
+$string = file_get_contents("kombidukkani_comments.json");
 $json_a = json_decode($string, true);
 
 foreach ($json_a as $person_name => $person_a) {
@@ -48,7 +48,7 @@ foreach ($json_a as $person_name => $person_a) {
     <?php $str1 = $person_a['criterias']['criteria']['numberOfReviews5']; ?>
     <p>Criter1: <?php echo $str1  ?></p>
 
-*/
+
 
   for($i=0; $i<234; $i++){
     $str1 = $person_a['product'][$i]['name']; ?>
@@ -62,7 +62,23 @@ foreach ($json_a as $person_name => $person_a) {
 
    }
 ?>
-<?php
+
+*/
+
+for($i=0; $i<200; $i++){
+  $str1 = $person_a['comment'][$i]['reviewer']; ?>
+  <p>Reviewer: <?php echo $str1  ?></p>
+ <?php $str1 = $person_a['comment'][$i]['dateTime']; ?>
+  <p>Datetime: <?php echo $str1  ?></p><?php
+  $str1 = $person_a['comment'][$i]['productName']; ?>
+  <p>Productname: <?php echo $str1  ?></p><?php
+ $str1 = $person_a['comment'][$i]['mood']; ?>
+  <p>Mood: <?php echo $str1  ?></p><?php
+  $str1 = $person_a['comment'][$i]['text']; ?>
+   <p>Text: <?php echo $str1  ?></p><?php
+
+ }
+
 }
 
 ?>
