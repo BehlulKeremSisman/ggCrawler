@@ -169,7 +169,7 @@ comments_array, reviewers_array, dates_array,productsName_array, mood_array = []
 j=1 #sayfa
 q=0 #dateler için
 p=0 #productName için
-while j < sayfaSayisi:
+while j <= sayfaSayisi:
 	m = str(j)
 	url= "https://profil.gittigidiyor.com/"+storename+"/aldigi-yorumlar/satis?sf=" + m + "#yorum"
 	#print(url)
@@ -212,10 +212,9 @@ while j < sayfaSayisi:
 	p=0
 
 
-filename_comments = storename + "_comments" + ".json" 
+filename_comments = storename + "_comments" + ".json"
 file_comments = open(filename_comments, "w")
- 
+
 json_data_comments = { "comments": { "comment" : [{"reviewer": r, "dateTime": d, "productName": p , "mood" : m, "text": t} for r,d,p,m,t in zip (reviewers_array,dates_array,productsName_array,mood_array,comments_array)]}}
 with open(filename_comments,'w') as f:
 	json.dump(json_data_comments, f,ensure_ascii=False)
-

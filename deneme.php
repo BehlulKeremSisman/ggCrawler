@@ -7,12 +7,12 @@
 
 <?php
 
-$string = file_get_contents("kombidukkani_comments.json");
+$string = file_get_contents("kombidukkani_products.json");
 $json_a = json_decode($string, true);
 
 foreach ($json_a as $person_name => $person_a) {
 
-/*
+
     $str1 = $person_a['numberOfReviewsMonths']; ?>
     <p>Number of reviews: <?php echo $str1  ?></p>
    <?php $str1 = $person_a['positiveScoreRate']; ?>
@@ -48,7 +48,7 @@ foreach ($json_a as $person_name => $person_a) {
     <?php $str1 = $person_a['criterias']['criteria']['numberOfReviews5']; ?>
     <p>Criter1: <?php echo $str1  ?></p>
 
-
+<?php
 
   for($i=0; $i<234; $i++){
     $str1 = $person_a['product'][$i]['name']; ?>
@@ -59,13 +59,14 @@ foreach ($json_a as $person_name => $person_a) {
     <p>Price: <?php echo $str1  ?></p><?php
    $str1 = $person_a['product'][$i]['shipment']; ?>
     <p>Shipment: <?php echo $str1  ?></p><?php
+    echo "--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------";
 
    }
-?>
 
-*/
 
-for($i=0; $i<200; $i++){
+
+/*
+for($i=0; $i<328; $i++){
   $str1 = $person_a['comment'][$i]['reviewer']; ?>
   <p>Reviewer: <?php echo $str1  ?></p>
  <?php $str1 = $person_a['comment'][$i]['dateTime']; ?>
@@ -76,12 +77,12 @@ for($i=0; $i<200; $i++){
   <p>Mood: <?php echo $str1  ?></p><?php
   $str1 = $person_a['comment'][$i]['text']; ?>
    <p>Text: <?php echo $str1  ?></p><?php
-
- }
+   echo "--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------";
+ }*/
 
 }
-
 ?>
+
 
 </body>
 </html>
