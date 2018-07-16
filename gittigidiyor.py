@@ -5,6 +5,11 @@ from bs4 import BeautifulSoup
 from selenium import webdriver
 
 storename = str(sys.argv[1])
+dateInput = str(sys.argv[2])
+
+gun = dateInput[:2]
+ay = dateInput[3:5]
+yıl = dateInput[6:]
 
 #--------------------------------------------------------------    stores    --------------------------------------------------------------
 
@@ -143,6 +148,19 @@ with open(filename_products, 'w') as f:
 sayfaSayisi = 0
 var = 1
 daTeSayisi = 0 #2018 içeren Date sayisi
+
+
+'''
+filename = storename + "_comments" + ".json"
+
+if os.path.isfile(filename):
+	with open(filename) as data_file:
+		dataArray = []
+		dataArray = json.load(data_file)
+			
+		print(dataArray['comments']['comment'][12]['dateTime'])
+'''			
+
 while var < 1000:
 	x = str(var)
 	url_Comments= "https://profil.gittigidiyor.com/"+storename+"/aldigi-yorumlar/satis?sf=" + x + "#yorum"
@@ -169,7 +187,7 @@ comments_array, reviewers_array, dates_array,productsName_array, mood_array = []
 j=1 #sayfa
 q=0 #dateler için
 p=0 #productName için
-while j <= sayfaSayisi:
+while j < sayfaSayisi:
 	m = str(j)
 	url= "https://profil.gittigidiyor.com/"+storename+"/aldigi-yorumlar/satis?sf=" + m + "#yorum"
 	#print(url)
@@ -199,8 +217,22 @@ while j <= sayfaSayisi:
 		if "Profil" in date:
 			continue
 		if "/2018" not in date:
-			continue
-		dates_array.append(str(date))
+			continue	
+		dateGun = date[:2]
+		dateAy = date[3:5]
+		dateYıl = date[6:]
+		if dateYıl >= yıl:
+			if dateAy > ay:
+				dates_array.append(str(date))
+				continue
+			if dateAy == ay:
+				if dateGun >= gun:
+					dates_array.append(str(date))
+					continue
+		j = sayfaSayisi
+		break
+
+					
 
 	while p < len(productNames):
 		productName = soup.find_all("a",attrs={"class":"bold"})[p].text
@@ -211,10 +243,10 @@ while j <= sayfaSayisi:
 	q=0
 	p=0
 
-
 filename_comments = storename + "_comments" + ".json"
 file_comments = open(filename_comments, "w")
 
 json_data_comments = { "comments": { "comment" : [{"reviewer": r, "dateTime": d, "productName": p , "mood" : m, "text": t} for r,d,p,m,t in zip (reviewers_array,dates_array,productsName_array,mood_array,comments_array)]}}
 with open(filename_comments,'w') as f:
 	json.dump(json_data_comments, f,ensure_ascii=False)
+
