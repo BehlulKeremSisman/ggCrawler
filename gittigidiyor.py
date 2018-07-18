@@ -1,7 +1,9 @@
 import sys
 import requests
 import json
+from pprint import pprint
 from bs4 import BeautifulSoup
+import os
 from selenium import webdriver
 
 storename = str(sys.argv[1])
