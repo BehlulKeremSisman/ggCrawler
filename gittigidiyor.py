@@ -38,12 +38,14 @@ for k in range(len(numCriteria)):
     avgPoints_array.append(avgPoint.text)
     numReviews_array.append(numReview.text)
 
-filename_store = storename + "_store" + ".json"
-file_store = open(filename_store, "w")
+filename_store = storename + ".json"
 
-json_data_store = { storelink: {
-                "numberOfReviewsMonths" : numberOfReviewsMonths,
-                "positiveScoreRate" : rateScore,
+json_data_store = { storelink: [],
+                   "products": [],
+                   "comments": []
+                }
+
+json_store_info = { "numberOfReviewsMonths" : numberOfReviewsMonths, "positiveScoreRate" : rateScore,
                 "criterias": {
                     "criteria": {
                         "label1" : criteria_array[0], "averagePoint1" : avgPoints_array[0], "numberOfReviews1" : numReviews_array[0],
@@ -52,12 +54,14 @@ json_data_store = { storelink: {
                         "label4" : criteria_array[3], "averagePoint4" : avgPoints_array[3], "numberOfReviews4" : numReviews_array[3],
                         "label5" : criteria_array[4], "averagePoint5" : avgPoints_array[4], "numberOfReviews5" : numReviews_array[4]
                     }
-                }
-             }
-         }
+                 }}
 
-json.dump(json_data_store, file_store)
-file_store.close()
+with open(filename_store, mode='w', encoding='utf-8') as f:
+    json.dump([], f)
+
+with open(filename_store, mode='w', encoding='utf-8') as feedsjson0:
+    json_data_store[storelink].append(json_store_info)
+    json.dump(json_data_store, feedsjson0)
 
 #--------------------------------------------------------------    products    --------------------------------------------------------------
 
@@ -65,9 +69,7 @@ arama = "/arama/?satici="
 urlProducts = "https://www.gittigidiyor.com" + arama + storename
 r2 = requests.get(urlProducts)
 soup2 = BeautifulSoup(r2.content, "lxml")
-filename_products = storename + "_products" + ".json"
 productCount = soup2.find_all("p", attrs={"itemprop" : "price"})
-
 
 #1.page name,price
 productNames, productPrices = [], []
@@ -139,12 +141,10 @@ while(next_page != None):
     sayfa = next_page_str.split(storename,1)[1]
     print (str(sayfa) + ". ürün sayfasına geçildi.")
 
-
-#store json
-json_data_product = { "products" : {"product" : [{"name" : n, "price" : p, "category" : c, "shipment" : s} for n,p,c,s in zip(productNames,productPrices,productCategories,productShipments)]}}
-with open(filename_products, 'w') as f:
-    json.dump(json_data_product, f,ensure_ascii=False)
-
+with open(filename_store, mode='w', encoding='utf-8') as feedsjson:
+    json_data_product = { "product" : [{"name" : n, "price" : p, "category" : c, "shipment" : s} for n,p,c,s in zip(productNames,productPrices,productCategories,productShipments)]}
+    json_data_store["products"].append(json_data_product)
+    json.dump(json_data_store, feedsjson)
 
 #--------------------------------------------------------------    comments    --------------------------------------------------------------
 sayfaSayisi = 0
@@ -159,9 +159,9 @@ if os.path.isfile(filename):
 	with open(filename) as data_file:
 		dataArray = []
 		dataArray = json.load(data_file)
-			
+
 		print(dataArray['comments']['comment'][12]['dateTime'])
-'''			
+'''
 
 while var < 1000:
 	x = str(var)
@@ -219,7 +219,7 @@ while j < sayfaSayisi:
 		if "Profil" in date:
 			continue
 		if "/2018" not in date:
-			continue	
+			continue
 		dateGun = date[:2]
 		dateAy = date[3:5]
 		dateYıl = date[6:]
@@ -234,7 +234,7 @@ while j < sayfaSayisi:
 		j = sayfaSayisi
 		break
 
-					
+
 
 	while p < len(productNames):
 		productName = soup.find_all("a",attrs={"class":"bold"})[p].text
@@ -245,10 +245,7 @@ while j < sayfaSayisi:
 	q=0
 	p=0
 
-filename_comments = storename + "_comments" + ".json"
-file_comments = open(filename_comments, "w")
-
-json_data_comments = { "comments": { "comment" : [{"reviewer": r, "dateTime": d, "productName": p , "mood" : m, "text": t} for r,d,p,m,t in zip (reviewers_array,dates_array,productsName_array,mood_array,comments_array)]}}
-with open(filename_comments,'w') as f:
-	json.dump(json_data_comments, f,ensure_ascii=False)
-
+with open(filename_store, mode='w', encoding='utf-8') as feedsjson2:
+    json_data_comments = { "comment" : [{"reviewer": r, "dateTime": d, "productName": p , "mood" : m, "text": t} for r,d,p,m,t in zip (reviewers_array,dates_array,productsName_array,mood_array,comments_array)]}
+    json_data_store["comments"].append(json_data_comments)
+    json.dump(json_data_store, feedsjson2)
