@@ -40,10 +40,7 @@ for k in range(len(numCriteria)):
 
 filename_store = storename + ".json"
 
-json_data_store = { storelink: [],
-                   "products": [],
-                   "comments": []
-                }
+json_data_store = { storelink: [] }
 
 json_store_info = { "numberOfReviewsMonths" : numberOfReviewsMonths, "positiveScoreRate" : rateScore,
                 "criterias": {
@@ -55,9 +52,6 @@ json_store_info = { "numberOfReviewsMonths" : numberOfReviewsMonths, "positiveSc
                         "label5" : criteria_array[4], "averagePoint5" : avgPoints_array[4], "numberOfReviews5" : numReviews_array[4]
                     }
                  }}
-
-with open(filename_store, mode='w', encoding='utf-8') as f:
-    json.dump([], f)
 
 with open(filename_store, mode='w', encoding='utf-8') as feedsjson0:
     json_data_store[storelink].append(json_store_info)
@@ -142,8 +136,8 @@ while(next_page != None):
     print (str(sayfa) + ". ürün sayfasına geçildi.")
 
 with open(filename_store, mode='w', encoding='utf-8') as feedsjson:
-    json_data_product = { "product" : [{"name" : n, "price" : p, "category" : c, "shipment" : s} for n,p,c,s in zip(productNames,productPrices,productCategories,productShipments)]}
-    json_data_store["products"].append(json_data_product)
+    json_data_product = { "products" : { "product" : [{"name" : n, "price" : p, "category" : c, "shipment" : s} for n,p,c,s in zip(productNames,productPrices,productCategories,productShipments)]}}
+    json_data_store[storelink].append(json_data_product)
     json.dump(json_data_store, feedsjson)
 
 #--------------------------------------------------------------    comments    --------------------------------------------------------------
@@ -246,6 +240,6 @@ while j < sayfaSayisi:
 	p=0
 
 with open(filename_store, mode='w', encoding='utf-8') as feedsjson2:
-    json_data_comments = { "comment" : [{"reviewer": r, "dateTime": d, "productName": p , "mood" : m, "text": t} for r,d,p,m,t in zip (reviewers_array,dates_array,productsName_array,mood_array,comments_array)]}
-    json_data_store["comments"].append(json_data_comments)
+    json_data_comments = { "comments" : { "comment" : [{"reviewer": r, "dateTime": d, "productName": p , "mood" : m, "text": t} for r,d,p,m,t in zip (reviewers_array,dates_array,productsName_array,mood_array,comments_array)]}}
+    json_data_store[storelink].append(json_data_comments)
     json.dump(json_data_store, feedsjson2)

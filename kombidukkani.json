@@ -1,0 +1,399 @@
+{
+  "https://profil.gittigidiyor.com/kombidukkani": [{
+    "numberOfReviewsMonths": "932",
+    "positiveScoreRate": "%100",
+    "criterias": {
+      "criteria": {
+        "label1": "\u00dcr\u00fcn\u00fcn a\u00e7\u0131klamalarda anlat\u0131ld\u0131\u011f\u0131 gibi olmas\u0131",
+        "averagePoint1": "4.9 / 5",
+        "numberOfReviews1": "500",
+        "label2": "Sat\u0131c\u0131n\u0131n al\u0131c\u0131yla olan ileti\u015fimi",
+        "averagePoint2": "4.7 / 5",
+        "numberOfReviews2": "500",
+        "label3": "\u00dcr\u00fcn\u00fcn zaman\u0131nda kargoya verilmesi",
+        "averagePoint3": "4.8 / 5",
+        "numberOfReviews3": "500",
+        "label4": "\u00dcr\u00fcn\u00fcn kargo \u00fccreti",
+        "averagePoint4": "5 / 5",
+        "numberOfReviews4": "2",
+        "label5": "\u00dcr\u00fcn\u00fcn kargo (ta\u015f\u0131ma, teslimat) hizmeti",
+        "averagePoint5": "4.5 / 5",
+        "numberOfReviews5": "500"
+      }
+    }
+  }, {
+    "products": {
+      "product": [{
+        "name": "Bosch Class 2000 W 22 Kw (19.000 Kcal) Hermetik Kombi",
+        "price": "1.939,90                                                                                                        TL",
+        "category": "Ana Sayfa\n                                \n\n\n\n\n\n                                        Elektronik                                     \n\n\n\n\n\n                                        Beyaz E\u015fya & K\u00fc\u00e7\u00fck Ev Aletleri                                     \n\n\n\n\n\n                                        Is\u0131tma, So\u011futma Sistemi                                     \n\n\n\n\n\n                                        Kombi                                     \n\n\n\n\n\n                                        Bosch Kombi                                    \n\n\n\n\n\n                                        Bosch Class 2000 W 22 KW",
+        "shipment": "\u00dccretsiz - Ayn\u0131 G\u00fcn Kargo"
+      }, {
+        "name": "Airfel Digifix Duo KM1-24CE Hermetik Kombi (20000 kcal) 24 kw",
+        "price": "1.699,00                                                                                                        TL",
+        "category": "Ana Sayfa\n                                \n\n\n\n\n\n                                        Elektronik                                     \n\n\n\n\n\n                                        Beyaz E\u015fya & K\u00fc\u00e7\u00fck Ev Aletleri                                     \n\n\n\n\n\n                                        Is\u0131tma, So\u011futma Sistemi                                     \n\n\n\n\n\n                                        Kombi                                     \n\n\n\n\n\n                                        Airfel Kombi                                    \n\n\n\n\n\n                                        Airfel Digifix Duo KM1 24CE",
+        "shipment": "\u00dccretsiz - Ayn\u0131 G\u00fcn Kargo"
+      }, {
+        "name": "Bosch Condens 2000 W Yo\u011fu\u015fmal\u0131 Kombi 24 kw 20.000 kcal",
+        "price": "2.559,00                                                                                                        TL",
+        "category": "Ana Sayfa\n                                \n\n\n\n\n\n                                        Elektronik                                     \n\n\n\n\n\n                                        Beyaz E\u015fya & K\u00fc\u00e7\u00fck Ev Aletleri                                     \n\n\n\n\n\n                                        Is\u0131tma, So\u011futma Sistemi                                     \n\n\n\n\n\n                                        Kombi                                     \n\n\n\n\n\n                                        Bosch Kombi                                    \n\n\n\n\n\n                                        Bosch Condense 2000 W 24",
+        "shipment": "\u00dccretsiz - Ertesi G\u00fcn Kargo"
+      }, {
+        "name": "ECA Proteus Premix Yo\u011fu\u015fmal\u0131 Kombi ERP 24 kW 20.000 kcal",
+        "price": "3.269,00                                                                                                        TL",
+        "category": "Ana Sayfa\n                                \n\n\n\n\n\n                                        Elektronik                                     \n\n\n\n\n\n                                        Beyaz E\u015fya & K\u00fc\u00e7\u00fck Ev Aletleri                                     \n\n\n\n\n\n                                        Is\u0131tma, So\u011futma Sistemi                                     \n\n\n\n\n\n                                        Kombi                                     \n\n\n\n\n\n                                        E.C.A. Kombi                                    \n\n\n\n\n\n                                        E.C.A. Proteus Premix 24 HM",
+        "shipment": "\u00dccretsiz - Ertesi G\u00fcn Kargo"
+      }, {
+        "name": "Viessmann Vitodens 050 -T 25 Kw (21.500 KCALH)",
+        "price": "2.749,00                                                                                                        TL",
+        "category": "Ana Sayfa\n                                \n\n\n\n\n\n                                        Elektronik                                     \n\n\n\n\n\n                                        Beyaz E\u015fya & K\u00fc\u00e7\u00fck Ev Aletleri                                     \n\n\n\n\n\n                                        Is\u0131tma, So\u011futma Sistemi                                     \n\n\n\n\n\n                                        Kombi                                     \n\n\n\n\n\n                                        Viessmann Kombi                                    \n\n\n\n\n\n                                        Viessmann Vitodens 050 t 25 Kw",
+        "shipment": "\u00dccretsiz - Ertesi G\u00fcn Kargo"
+      }, {
+        "name": "Airfel Digifel Duo KM1-24CE Hermetik Kombi Yeni Model (20000 kcal) 24 kw",
+        "price": "1.769,00                                                                                                        TL",
+        "category": "Ana Sayfa\n                                \n\n\n\n\n\n                                        Elektronik                                     \n\n\n\n\n\n                                        Beyaz E\u015fya & K\u00fc\u00e7\u00fck Ev Aletleri                                     \n\n\n\n\n\n                                        Is\u0131tma, So\u011futma Sistemi                                     \n\n\n\n\n\n                                        Kombi                                     \n\n\n\n\n\n                                        Airfel Kombi                                    \n\n\n\n\n\n                                        Airfel Digifel Duo KB2 24 CE",
+        "shipment": "\u00dccretsiz - Ertesi G\u00fcn Kargo"
+      }, {
+        "name": "Vaillant Ecofit Start 246 -1 Yo\u011fu\u015fmal\u0131 Kombi 24 KW (20.000kcal)",
+        "price": "2.789,00                                                                                                        TL",
+        "category": "Ana Sayfa\n                                \n\n\n\n\n\n                                        Elektronik                                     \n\n\n\n\n\n                                        Beyaz E\u015fya & K\u00fc\u00e7\u00fck Ev Aletleri                                     \n\n\n\n\n\n                                        Is\u0131tma, So\u011futma Sistemi                                     \n\n\n\n\n\n                                        Kombi                                     \n\n\n\n\n\n                                        Vaillant Kombi                                    \n\n\n\n\n\n                                        Vaillant ecoFIT Start VUW 246",
+        "shipment": "\u00dccretsiz - Ertesi G\u00fcn Kargo"
+      }, {
+        "name": "Bosch Condens 2500 W Yo\u011fu\u015fmal\u0131 Kombi 24kw 20.000kcal",
+        "price": "3.299,00                                                                                                        TL",
+        "category": "Ana Sayfa\n                                \n\n\n\n\n\n                                        Elektronik                                     \n\n\n\n\n\n                                        Beyaz E\u015fya & K\u00fc\u00e7\u00fck Ev Aletleri                                     \n\n\n\n\n\n                                        Is\u0131tma, So\u011futma Sistemi                                     \n\n\n\n\n\n                                        Kombi                                     \n\n\n\n\n\n                                        Bosch Kombi                                    \n\n\n\n\n\n                                        Bosch Condense 2500 W 24",
+        "shipment": "\u00dccretsiz - Ayn\u0131 G\u00fcn Kargo"
+      }, {
+        "name": "Demird\u00f6k\u00fcm Nitron Condense P 24 Yo\u011fu\u015fmal\u0131 Kombi (20.000 kcal)",
+        "price": "2.749,00                                                                                                        TL",
+        "category": "Ana Sayfa\n                                \n\n\n\n\n\n                                        Elektronik                                     \n\n\n\n\n\n                                        Beyaz E\u015fya & K\u00fc\u00e7\u00fck Ev Aletleri                                     \n\n\n\n\n\n                                        Is\u0131tma, So\u011futma Sistemi                                     \n\n\n\n\n\n                                        Kombi                                     \n\n\n\n\n\n                                        Demird\u00f6k\u00fcm Kombi                                    \n\n\n\n\n\n                                        Demird\u00f6k\u00fcm Nitron Condense P 24",
+        "shipment": "\u00dccretsiz - Ayn\u0131 G\u00fcn Kargo"
+      }, {
+        "name": "Cosa Ak\u0131ll\u0131 Oda Termostat\u0131 Kombi Kiti",
+        "price": "249,00                                                                                                        TL",
+        "category": "Ana Sayfa\n                                \n\n\n\n\n\n                                        Elektronik                                     \n\n\n\n\n\n                                        Beyaz E\u015fya & K\u00fc\u00e7\u00fck Ev Aletleri                                     \n\n\n\n\n\n                                        Is\u0131tma, So\u011futma Sistemi                                     \n\n\n\n\n\n                                        Termostat                                     \n\n\n\n\n\n                                        General Termostat",
+        "shipment": "\u00dccretsiz - Ayn\u0131 G\u00fcn Kargo"
+      }, {
+        "name": "Demird\u00f6k\u00fcm Nitromix P 24 Yo\u011fu\u015fmal\u0131 Kombi 24kw 20.000 kcal",
+        "price": "3.379,00                                                                                                        TL",
+        "category": "Ana Sayfa\n                                \n\n\n\n\n\n                                        Elektronik                                     \n\n\n\n\n\n                                        Beyaz E\u015fya & K\u00fc\u00e7\u00fck Ev Aletleri                                     \n\n\n\n\n\n                                        Is\u0131tma, So\u011futma Sistemi                                     \n\n\n\n\n\n                                        Kombi                                     \n\n\n\n\n\n                                        Demird\u00f6k\u00fcm Kombi                                    \n\n\n\n\n\n                                        Demird\u00f6k\u00fcm Nitromix P 24",
+        "shipment": "\u00dccretsiz - Ertesi G\u00fcn Kargo"
+      }, {
+        "name": "Demird\u00f6k\u00fcm Nitron Condense P 28 Yo\u011fu\u015fmal\u0131 Kombi (24.000 kcal)",
+        "price": "3.173,00                                                                                                        TL",
+        "category": "Ana Sayfa\n                                \n\n\n\n\n\n                                        Elektronik                                     \n\n\n\n\n\n                                        Beyaz E\u015fya & K\u00fc\u00e7\u00fck Ev Aletleri                                     \n\n\n\n\n\n                                        Is\u0131tma, So\u011futma Sistemi                                     \n\n\n\n\n\n                                        Kombi                                     \n\n\n\n\n\n                                        Demird\u00f6k\u00fcm Kombi                                    \n\n\n\n\n\n                                        Demird\u00f6k\u00fcm Nitron Condense P 28",
+        "shipment": "\u00dccretsiz - Ertesi G\u00fcn Kargo"
+      }, {
+        "name": "Viessmann Vitopend 100 Hermetik Kombi 24kw (20.000kcal)",
+        "price": "2.479,00                                                                                                        TL",
+        "category": "Ana Sayfa\n                                \n\n\n\n\n\n                                        Elektronik                                     \n\n\n\n\n\n                                        Beyaz E\u015fya & K\u00fc\u00e7\u00fck Ev Aletleri                                     \n\n\n\n\n\n                                        Is\u0131tma, So\u011futma Sistemi                                     \n\n\n\n\n\n                                        Kombi                                     \n\n\n\n\n\n                                        Viessmann Kombi                                    \n\n\n\n\n\n                                        Viessmann Vitopend 100 W 24.8",
+        "shipment": "\u00dccretsiz - Ertesi G\u00fcn Kargo"
+      }, {
+        "name": "Demird\u00f6k\u00fcm RF 6001 Kablosuz Oda Termostat\u0131",
+        "price": "152,50                                                                                                        TL",
+        "category": "Ana Sayfa\n                                \n\n\n\n\n\n                                        Elektronik                                     \n\n\n\n\n\n                                        Beyaz E\u015fya & K\u00fc\u00e7\u00fck Ev Aletleri                                     \n\n\n\n\n\n                                        Is\u0131tma, So\u011futma Sistemi                                     \n\n\n\n\n\n                                        Termostat                                     \n\n\n\n\n\n                                        Demird\u00f6k\u00fcm Termostat",
+        "shipment": "\u00dccretsiz - Ayn\u0131 G\u00fcn Kargo"
+      }, {
+        "name": "Gaz Alarm Cihazi (do\u011falgaz / Lpg) Gaz Alarm Cihaz",
+        "price": "34,99                                                                                                        TL",
+        "category": "Ana Sayfa\n                                \n\n\n\n\n\n                                        Elektronik                                     \n\n\n\n\n\n                                        Beyaz E\u015fya & K\u00fc\u00e7\u00fck Ev Aletleri                                     \n\n\n\n\n\n                                        Ev G\u00fcvenlik Sistemleri                                     \n\n\n\n\n\n                                        Duman, Gaz Dedekt\u00f6r\u00fc",
+        "shipment": "\u00dccretsiz - Ertesi G\u00fcn Kargo"
+      }, {
+        "name": "Bosch TR 24 RF Kablosuz Oda Termostat\u0131",
+        "price": "400,00                                                                                                        TL",
+        "category": "Ana Sayfa\n                                \n\n\n\n\n\n                                        Elektronik                                     \n\n\n\n\n\n                                        Beyaz E\u015fya & K\u00fc\u00e7\u00fck Ev Aletleri                                     \n\n\n\n\n\n                                        Is\u0131tma, So\u011futma Sistemi                                     \n\n\n\n\n\n                                        Termostat                                     \n\n\n\n\n\n                                        Bosch Termostat",
+        "shipment": "\u00dccretsiz - Ertesi G\u00fcn Kargo"
+      }, {
+        "name": "ECA ERT 176 RF Kablosuz Oda Termostat\u0131",
+        "price": "160,00                                                                                                        TL",
+        "category": "Ana Sayfa\n                                \n\n\n\n\n\n                                        Elektronik                                     \n\n\n\n\n\n                                        Beyaz E\u015fya & K\u00fc\u00e7\u00fck Ev Aletleri                                     \n\n\n\n\n\n                                        Is\u0131tma, So\u011futma Sistemi                                     \n\n\n\n\n\n                                        Termostat                                     \n\n\n\n\n\n                                        E.C.A. Termostat",
+        "shipment": "\u00dccretsiz - Ertesi G\u00fcn Kargo"
+      }, {
+        "name": "Demird\u00f6k\u00fcm Exacontrol 7R Kablosuz Oda Termostat\u0131",
+        "price": "325,00                                                                                                        TL",
+        "category": "Ana Sayfa\n                                \n\n\n\n\n\n                                        Elektronik                                     \n\n\n\n\n\n                                        Beyaz E\u015fya & K\u00fc\u00e7\u00fck Ev Aletleri                                     \n\n\n\n\n\n                                        Is\u0131tma, So\u011futma Sistemi                                     \n\n\n\n\n\n                                        Termostat                                     \n\n\n\n\n\n                                        Demird\u00f6k\u00fcm Termostat",
+        "shipment": "\u00dccretsiz - Ertesi G\u00fcn Kargo"
+      }, {
+        "name": "Demird\u00f6k\u00fcm Nepto Hk T 224 Hermetik Kombi 20.000 kcal",
+        "price": "1.879,00                                                                                                        TL",
+        "category": "Ana Sayfa\n                                \n\n\n\n\n\n                                        Elektronik                                     \n\n\n\n\n\n                                        Beyaz E\u015fya & K\u00fc\u00e7\u00fck Ev Aletleri                                     \n\n\n\n\n\n                                        Is\u0131tma, So\u011futma Sistemi                                     \n\n\n\n\n\n                                        Kombi                                     \n\n\n\n\n\n                                        Demird\u00f6k\u00fcm Kombi                                    \n\n\n\n\n\n                                        Demird\u00f6k\u00fcm Nepto HK T 224",
+        "shipment": "\u00dccretsiz - Ayn\u0131 G\u00fcn Kargo"
+      }, {
+        "name": "VA\u0130LLANT VAI 6-035 NW 12.000 BTU \u0130NVERTER KL\u0130MA",
+        "price": "2.699,00                                                                                                        TL",
+        "category": "Ana Sayfa\n                                \n\n\n\n\n\n                                        Elektronik                                     \n\n\n\n\n\n                                        Beyaz E\u015fya & K\u00fc\u00e7\u00fck Ev Aletleri                                     \n\n\n\n\n\n                                        Is\u0131tma, So\u011futma Sistemi                                     \n\n\n\n\n\n                                        Klima ve Aksesuarlar\u0131                                     \n\n\n\n\n\n                                        Klima                                     \n\n\n\n\n\n                                        Vaillant Klima                                    \n\n\n\n\n\n                                        Vaillant VAI 6-035 WN",
+        "shipment": "\u00dccretsiz - 2-3 g\u00fcn i\u00e7inde kargo"
+      }, {
+        "name": "VA\u0130LLANT VAI 6-065 NW 24.000 BTU \u0130NVERTER KL\u0130MA",
+        "price": "4.990,00                                                                                                        TL",
+        "category": "Ana Sayfa\n                                \n\n\n\n\n\n                                        Elektronik                                     \n\n\n\n\n\n                                        Beyaz E\u015fya & K\u00fc\u00e7\u00fck Ev Aletleri                                     \n\n\n\n\n\n                                        Is\u0131tma, So\u011futma Sistemi                                     \n\n\n\n\n\n                                        Klima ve Aksesuarlar\u0131                                     \n\n\n\n\n\n                                        Klima                                     \n\n\n\n\n\n                                        Vaillant Klima                                    \n\n\n\n\n\n                                        Vaillant VAI 6-035 WN",
+        "shipment": "\u00dccretsiz - 2-3 g\u00fcn i\u00e7inde kargo"
+      }, {
+        "name": "VA\u0130LLANT VAI 6-050 NW 18.000 BTU \u0130NVERTER KL\u0130MA",
+        "price": "3.899,00                                                                                                        TL",
+        "category": "Ana Sayfa\n                                \n\n\n\n\n\n                                        Elektronik                                     \n\n\n\n\n\n                                        Beyaz E\u015fya & K\u00fc\u00e7\u00fck Ev Aletleri                                     \n\n\n\n\n\n                                        Is\u0131tma, So\u011futma Sistemi                                     \n\n\n\n\n\n                                        Klima ve Aksesuarlar\u0131                                     \n\n\n\n\n\n                                        Klima                                     \n\n\n\n\n\n                                        Vaillant Klima                                    \n\n\n\n\n\n                                        Vaillant VAI 6-035 WN",
+        "shipment": "\u00dccretsiz - 2-3 g\u00fcn i\u00e7inde kargo"
+      }, {
+        "name": "VA\u0130LLANT VAI 6-025 NW 9.000 BTU \u0130NVERTER KL\u0130MA",
+        "price": "2.499,00                                                                                                        TL",
+        "category": "Ana Sayfa\n                                \n\n\n\n\n\n                                        Elektronik                                     \n\n\n\n\n\n                                        Beyaz E\u015fya & K\u00fc\u00e7\u00fck Ev Aletleri                                     \n\n\n\n\n\n                                        Is\u0131tma, So\u011futma Sistemi                                     \n\n\n\n\n\n                                        Klima ve Aksesuarlar\u0131                                     \n\n\n\n\n\n                                        Klima                                     \n\n\n\n\n\n                                        Vaillant Klima                                    \n\n\n\n\n\n                                        Vaillant VAI 6-025 WN",
+        "shipment": "\u00dccretsiz - 2-3 g\u00fcn i\u00e7inde kargo"
+      }, {
+        "name": "Viessmann Vitodens 50-W Yo\u011fu\u015fmal\u0131 Kombi 24 kw (20.000kcal)",
+        "price": "3.870,00                                                                                                        TL",
+        "category": "Ana Sayfa\n                                \n\n\n\n\n\n                                        Elektronik                                     \n\n\n\n\n\n                                        Beyaz E\u015fya & K\u00fc\u00e7\u00fck Ev Aletleri                                     \n\n\n\n\n\n                                        Is\u0131tma, So\u011futma Sistemi                                     \n\n\n\n\n\n                                        Kombi                                     \n\n\n\n\n\n                                        Viessmann Kombi                                    \n\n\n\n\n\n                                        Viessmann Vitodens 050 W 24",
+        "shipment": "\u00dccretsiz - Ertesi G\u00fcn Kargo"
+      }, {
+        "name": "Vaillant ecoTEC Pure VUW 286 / 7-2 Yo\u011fu\u015fmal\u0131 Kombi ( 20.000 kcal )",
+        "price": "4.329,00                                                                                                        TL",
+        "category": "Ana Sayfa\n                                \n\n\n\n\n\n                                        Elektronik                                     \n\n\n\n\n\n                                        Beyaz E\u015fya & K\u00fc\u00e7\u00fck Ev Aletleri                                     \n\n\n\n\n\n                                        Is\u0131tma, So\u011futma Sistemi                                     \n\n\n\n\n\n                                        Kombi                                     \n\n\n\n\n\n                                        Vaillant Kombi                                    \n\n\n\n\n\n                                        Vaillant ecoTEC Pure VUW 286 / 7-2",
+        "shipment": "\u00dccretsiz - Ertesi G\u00fcn Kargo"
+      }, {
+        "name": "Demird\u00f6k\u00fcm Nitromix P 28 Yo\u011fu\u015fmal\u0131 Kombi 28kw 24.000kcal",
+        "price": "3.539,00                                                                                                        TL",
+        "category": "Ana Sayfa\n                                \n\n\n\n\n\n                                        Elektronik                                     \n\n\n\n\n\n                                        Beyaz E\u015fya & K\u00fc\u00e7\u00fck Ev Aletleri                                     \n\n\n\n\n\n                                        Is\u0131tma, So\u011futma Sistemi                                     \n\n\n\n\n\n                                        Kombi                                     \n\n\n\n\n\n                                        Demird\u00f6k\u00fcm Kombi                                    \n\n\n\n\n\n                                        Demird\u00f6k\u00fcm Nitromix P 28",
+        "shipment": "\u00dccretsiz - Ertesi G\u00fcn Kargo"
+      }, {
+        "name": "Buderus RC100 ODA Termostat\u0131 (Kablolu Mod\u00fclasyonlu)",
+        "price": "279,00                                                                                                        TL",
+        "category": "Ana Sayfa\n                                \n\n\n\n\n\n                                        Elektronik                                     \n\n\n\n\n\n                                        Beyaz E\u015fya & K\u00fc\u00e7\u00fck Ev Aletleri                                     \n\n\n\n\n\n                                        Is\u0131tma, So\u011futma Sistemi                                     \n\n\n\n\n\n                                        Termostat                                     \n\n\n\n\n\n                                        Buderus Termostat",
+        "shipment": "\u00dccretsiz - Ayn\u0131 G\u00fcn Kargo"
+      }, {
+        "name": "Eca Proteus Plus Blue Kombi 24 KW (20.000 kcal/h)",
+        "price": "2.099,00                                                                                                        TL",
+        "category": "Ana Sayfa\n                                \n\n\n\n\n\n                                        Elektronik                                     \n\n\n\n\n\n                                        Beyaz E\u015fya & K\u00fc\u00e7\u00fck Ev Aletleri                                     \n\n\n\n\n\n                                        Is\u0131tma, So\u011futma Sistemi                                     \n\n\n\n\n\n                                        Kombi                                     \n\n\n\n\n\n                                        E.C.A. Kombi                                    \n\n\n\n\n\n                                        E.C.A. Proteus Plus PRP Blue 24 HM",
+        "shipment": "\u00dccretsiz - Ertesi G\u00fcn Kargo"
+      }, {
+        "name": "Demird\u00f6k\u00fcm Atron H 28 Hermetik Kombi 28 kw 24.000 kcal",
+        "price": "2.399,00                                                                                                        TL",
+        "category": "Ana Sayfa\n                                \n\n\n\n\n\n                                        Elektronik                                     \n\n\n\n\n\n                                        Beyaz E\u015fya & K\u00fc\u00e7\u00fck Ev Aletleri                                     \n\n\n\n\n\n                                        Is\u0131tma, So\u011futma Sistemi                                     \n\n\n\n\n\n                                        Kombi                                     \n\n\n\n\n\n                                        Demird\u00f6k\u00fcm Kombi                                    \n\n\n\n\n\n                                        Demird\u00f6k\u00fcm Atron H 28",
+        "shipment": "\u00dccretsiz - Ertesi G\u00fcn Kargo"
+      }, {
+        "name": "Vaillant ecofit 286/1 Yo\u011fu\u015fmal\u0131 Kombi 28kw 24.000 kcal",
+        "price": "3.269,00                                                                                                        TL",
+        "category": "Ana Sayfa\n                                \n\n\n\n\n\n                                        Elektronik                                     \n\n\n\n\n\n                                        Beyaz E\u015fya & K\u00fc\u00e7\u00fck Ev Aletleri                                     \n\n\n\n\n\n                                        Is\u0131tma, So\u011futma Sistemi                                     \n\n\n\n\n\n                                        Kombi                                     \n\n\n\n\n\n                                        Vaillant Kombi                                    \n\n\n\n\n\n                                        Vaillant ecoFIT Start 286",
+        "shipment": "\u00dccretsiz - Ertesi G\u00fcn Kargo"
+      }, {
+        "name": "Eca Confeo Plus DCO 28 HM 24.000 kcal Kombi",
+        "price": "2.349,00                                                                                                        TL",
+        "category": "Ana Sayfa\n                                \n\n\n\n\n\n                                        Elektronik                                     \n\n\n\n\n\n                                        Beyaz E\u015fya & K\u00fc\u00e7\u00fck Ev Aletleri                                     \n\n\n\n\n\n                                        Is\u0131tma, So\u011futma Sistemi                                     \n\n\n\n\n\n                                        Kombi                                     \n\n\n\n\n\n                                        E.C.A. Kombi                                    \n\n\n\n\n\n                                        E.C.A. Confeo Plus 24 HM",
+        "shipment": "\u00dccretsiz - Ertesi G\u00fcn Kargo"
+      }, {
+        "name": "Eca Confeo Plus DCO 24 HM 20.000 kcal Kombi",
+        "price": "2.247,00                                                                                                        TL",
+        "category": "Ana Sayfa\n                                \n\n\n\n\n\n                                        Elektronik                                     \n\n\n\n\n\n                                        Beyaz E\u015fya & K\u00fc\u00e7\u00fck Ev Aletleri                                     \n\n\n\n\n\n                                        Is\u0131tma, So\u011futma Sistemi                                     \n\n\n\n\n\n                                        Kombi                                     \n\n\n\n\n\n                                        E.C.A. Kombi                                    \n\n\n\n\n\n                                        E.C.A. Confeo Plus 24 HM",
+        "shipment": "\u00dccretsiz - Ertesi G\u00fcn Kargo"
+      }, {
+        "name": "Protherm Lynx 24 Hermetik Kombi 24kw 20.000 kcal",
+        "price": "1.779,00                                                                                                        TL",
+        "category": "Ana Sayfa\n                                \n\n\n\n\n\n                                        Elektronik                                     \n\n\n\n\n\n                                        Beyaz E\u015fya & K\u00fc\u00e7\u00fck Ev Aletleri                                     \n\n\n\n\n\n                                        Is\u0131tma, So\u011futma Sistemi                                     \n\n\n\n\n\n                                        Kombi                                     \n\n\n\n\n\n                                        Protherm Kombi                                    \n\n\n\n\n\n                                        Protherm Lynx 24",
+        "shipment": "\u00dccretsiz - Ertesi G\u00fcn Kargo"
+      }, {
+        "name": "Demird\u00f6k\u00fcm Atron H 24 Hermetik Kombi 20.000kcal",
+        "price": "2.199,00                                                                                                        TL",
+        "category": "Ana Sayfa\n                                \n\n\n\n\n\n                                        Elektronik                                     \n\n\n\n\n\n                                        Beyaz E\u015fya & K\u00fc\u00e7\u00fck Ev Aletleri                                     \n\n\n\n\n\n                                        Is\u0131tma, So\u011futma Sistemi                                     \n\n\n\n\n\n                                        Kombi                                     \n\n\n\n\n\n                                        Demird\u00f6k\u00fcm Kombi                                    \n\n\n\n\n\n                                        Demird\u00f6k\u00fcm Atron H 24",
+        "shipment": "\u00dccretsiz - Ertesi G\u00fcn Kargo"
+      }, {
+        "name": "Kombi Alt Ba\u011flant\u0131 Seti 8 li Dirsekli",
+        "price": "39,50                                                                                                        TL",
+        "category": "Ana Sayfa\n                                \n\n\n\n\n\n                                        Ev, Bah\u00e7e ve Ofis                                     \n\n\n\n\n\n                                        Yap\u0131 Market & Tamirat                                     \n\n\n\n\n\n                                        Yap\u0131 Malzemeleri, Nalburiye                                     \n\n\n\n\n\n                                        Di\u011fer Yap\u0131 Malzemeleri",
+        "shipment": "\u00dccretsiz - Ertesi G\u00fcn Kargo"
+      }, {
+        "name": "V\u0130ESSMANN V\u0130TOCL\u0130MA 200-S 9.000 Btu/h Duvar Tipi Klima",
+        "price": "2.885,00                                                                                                        TL",
+        "category": "Ana Sayfa\n                                \n\n\n\n\n\n                                        Elektronik                                     \n\n\n\n\n\n                                        Beyaz E\u015fya & K\u00fc\u00e7\u00fck Ev Aletleri                                     \n\n\n\n\n\n                                        Is\u0131tma, So\u011futma Sistemi                                     \n\n\n\n\n\n                                        Klima ve Aksesuarlar\u0131                                     \n\n\n\n\n\n                                        Klima                                     \n\n\n\n\n\n                                        Viessmann Klima",
+        "shipment": "\u00dccretsiz - Ertesi G\u00fcn Kargo"
+      }, {
+        "name": "V\u0130ESSMANN V\u0130TOCL\u0130MA 200-S 12.000 Btu/h Duvar Tipi Klima",
+        "price": "3.049,00                                                                                                        TL",
+        "category": "Ana Sayfa\n                                \n\n\n\n\n\n                                        Elektronik                                     \n\n\n\n\n\n                                        Beyaz E\u015fya & K\u00fc\u00e7\u00fck Ev Aletleri                                     \n\n\n\n\n\n                                        Is\u0131tma, So\u011futma Sistemi                                     \n\n\n\n\n\n                                        Klima ve Aksesuarlar\u0131                                     \n\n\n\n\n\n                                        Klima                                     \n\n\n\n\n\n                                        Viessmann Klima",
+        "shipment": "\u00dccretsiz - Ertesi G\u00fcn Kargo"
+      }, {
+        "name": "V\u0130ESSMANN V\u0130TOCL\u0130MA 200-S 18.000 Btu/h Duvar Tipi Klima",
+        "price": "4.340,00                                                                                                        TL",
+        "category": "Ana Sayfa\n                                \n\n\n\n\n\n                                        Elektronik                                     \n\n\n\n\n\n                                        Beyaz E\u015fya & K\u00fc\u00e7\u00fck Ev Aletleri                                     \n\n\n\n\n\n                                        Is\u0131tma, So\u011futma Sistemi                                     \n\n\n\n\n\n                                        Klima ve Aksesuarlar\u0131                                     \n\n\n\n\n\n                                        Klima                                     \n\n\n\n\n\n                                        Viessmann Klima",
+        "shipment": "\u00dccretsiz - Ertesi G\u00fcn Kargo"
+      }, {
+        "name": "V\u0130ESSMANN V\u0130TOCL\u0130MA 200-S 22.000 Btu/h Duvar Tipi Klima",
+        "price": "5.779,00                                                                                                        TL",
+        "category": "Ana Sayfa\n                                \n\n\n\n\n\n                                        Elektronik                                     \n\n\n\n\n\n                                        Beyaz E\u015fya & K\u00fc\u00e7\u00fck Ev Aletleri                                     \n\n\n\n\n\n                                        Is\u0131tma, So\u011futma Sistemi                                     \n\n\n\n\n\n                                        Klima ve Aksesuarlar\u0131                                     \n\n\n\n\n\n                                        Klima                                     \n\n\n\n\n\n                                        Viessmann Klima",
+        "shipment": "\u00dccretsiz - Ertesi G\u00fcn Kargo"
+      }, {
+        "name": "Buderus RT 24 Rf Kablosuz Oda Termostat\u0131",
+        "price": "449,00                                                                                                        TL",
+        "category": "Ana Sayfa\n                                \n\n\n\n\n\n                                        Elektronik                                     \n\n\n\n\n\n                                        Beyaz E\u015fya & K\u00fc\u00e7\u00fck Ev Aletleri                                     \n\n\n\n\n\n                                        Is\u0131tma, So\u011futma Sistemi                                     \n\n\n\n\n\n                                        Termostat                                     \n\n\n\n\n\n                                        Buderus Termostat",
+        "shipment": "\u00dccretsiz - Ertesi G\u00fcn Kargo"
+      }, {
+        "name": "Eca Plustech Pt 24 Hm Yo\u011fu\u015fmal\u0131 Kombi 20.000 Kcal/h",
+        "price": "2.599,00                                                                                                        TL",
+        "category": "Ana Sayfa\n                                \n\n\n\n\n\n                                        Elektronik                                     \n\n\n\n\n\n                                        Beyaz E\u015fya & K\u00fc\u00e7\u00fck Ev Aletleri                                     \n\n\n\n\n\n                                        Is\u0131tma, So\u011futma Sistemi                                     \n\n\n\n\n\n                                        Kombi                                     \n\n\n\n\n\n                                        E.C.A. Kombi",
+        "shipment": "\u00dccretsiz - Ertesi G\u00fcn Kargo"
+      }, {
+        "name": "Buderus Hermetik 35 cm Kombi Baca Uzatmas\u0131 orjinal",
+        "price": "90,00                                                                                                        TL",
+        "category": "Ana Sayfa\n                                \n\n\n\n\n\n                                        Di\u011fer Her \u015eey                                     \n\n\n\n\n\n                                        Di\u011fer Her \u015eey",
+        "shipment": "\u00dccretsiz - Ertesi G\u00fcn Kargo"
+      }, {
+        "name": "Bosch Hermetik 35cm Kombi Baca Uzatmas\u0131",
+        "price": "90,00                                                                                                        TL",
+        "category": "Ana Sayfa\n                                \n\n\n\n\n\n                                        Di\u011fer Her \u015eey                                     \n\n\n\n\n\n                                        Di\u011fer Her \u015eey",
+        "shipment": "\u00dccretsiz - Ertesi G\u00fcn Kargo"
+      }, {
+        "name": "BUDERUS RC150 Programlanabilir Kablolu Oda Termostat\u0131",
+        "price": "389,00                                                                                                        TL",
+        "category": "Ana Sayfa\n                                \n\n\n\n\n\n                                        Elektronik                                     \n\n\n\n\n\n                                        Beyaz E\u015fya & K\u00fc\u00e7\u00fck Ev Aletleri                                     \n\n\n\n\n\n                                        Is\u0131tma, So\u011futma Sistemi                                     \n\n\n\n\n\n                                        Termostat                                     \n\n\n\n\n\n                                        Buderus Termostat",
+        "shipment": "\u00dccretsiz - Ertesi G\u00fcn Kargo"
+      }, {
+        "name": "Buderus RT 36 RF Kablosuz Programlanabilir Oda Termostat\u0131",
+        "price": "575,00                                                                                                        TL",
+        "category": "Ana Sayfa\n                                \n\n\n\n\n\n                                        Elektronik                                     \n\n\n\n\n\n                                        Beyaz E\u015fya & K\u00fc\u00e7\u00fck Ev Aletleri                                     \n\n\n\n\n\n                                        Is\u0131tma, So\u011futma Sistemi                                     \n\n\n\n\n\n                                        Termostat                                     \n\n\n\n\n\n                                        Buderus Termostat",
+        "shipment": "\u00dccretsiz - Ertesi G\u00fcn Kargo"
+      }, {
+        "name": "Bosch CR 10 Mod\u00fclasyonlu Dijital Oda Termostat\u0131",
+        "price": "225,00                                                                                                        TL",
+        "category": "Ana Sayfa\n                                \n\n\n\n\n\n                                        Elektronik                                     \n\n\n\n\n\n                                        Beyaz E\u015fya & K\u00fc\u00e7\u00fck Ev Aletleri                                     \n\n\n\n\n\n                                        Is\u0131tma, So\u011futma Sistemi                                     \n\n\n\n\n\n                                        Termostat                                     \n\n\n\n\n\n                                        Bosch Termostat",
+        "shipment": "\u00dccretsiz - Ertesi G\u00fcn Kargo"
+      }, {
+        "name": "Vaillant eRelax Wifi telefon Ak\u0131ll\u0131 Oda Termostat\u0131",
+        "price": "1.049,00                                                                                                        TL",
+        "category": "Ana Sayfa\n                                \n\n\n\n\n\n                                        Elektronik                                     \n\n\n\n\n\n                                        Beyaz E\u015fya & K\u00fc\u00e7\u00fck Ev Aletleri                                     \n\n\n\n\n\n                                        Is\u0131tma, So\u011futma Sistemi                                     \n\n\n\n\n\n                                        Termostat                                     \n\n\n\n\n\n                                        Vaillant Termostat",
+        "shipment": "\u00dccretsiz - Ertesi G\u00fcn Kargo"
+      }, {
+        "name": "Kalde K\u00f6\u015fe Radyat\u00f6r Vanas\u0131 1/2",
+        "price": "15,00                                                                                                        TL",
+        "category": "Ana Sayfa\n                                \n\n\n\n\n\n                                        Ev, Bah\u00e7e ve Ofis                                     \n\n\n\n\n\n                                        Yap\u0131 Market & Tamirat                                     \n\n\n\n\n\n                                        Yap\u0131 Malzemeleri, Nalburiye                                     \n\n\n\n\n\n                                        Di\u011fer Yap\u0131 Malzemeleri",
+        "shipment": "\u00dccretsiz - Ertesi G\u00fcn Kargo"
+      }, {
+        "name": "BOSCH TR 36 RF Programlanabilir Kablosuz Oda Termostat\u0131",
+        "price": "529,00                                                                                                        TL",
+        "category": "Ana Sayfa\n                                \n\n\n\n\n\n                                        Elektronik                                     \n\n\n\n\n\n                                        Beyaz E\u015fya & K\u00fc\u00e7\u00fck Ev Aletleri                                     \n\n\n\n\n\n                                        Is\u0131tma, So\u011futma Sistemi                                     \n\n\n\n\n\n                                        Termostat                                     \n\n\n\n\n\n                                        Bosch Termostat",
+        "shipment": "\u00dccretsiz - Ertesi G\u00fcn Kargo"
+      }, {
+        "name": "Kalde K\u00f6\u015fe Radyat\u00f6r Vanas\u0131 1/2 ( 10 ADET )",
+        "price": "119,00                                                                                                        TL",
+        "category": "Ana Sayfa\n                                \n\n\n\n\n\n                                        Ev, Bah\u00e7e ve Ofis                                     \n\n\n\n\n\n                                        Yap\u0131 Market & Tamirat                                     \n\n\n\n\n\n                                        Yap\u0131 Malzemeleri, Nalburiye                                     \n\n\n\n\n\n                                        Di\u011fer Yap\u0131 Malzemeleri",
+        "shipment": "\u00dccretsiz - Ertesi G\u00fcn Kargo"
+      }, {
+        "name": "Kombi Gaz Flexi 40cm",
+        "price": "17,50                                                                                                        TL",
+        "category": "Ana Sayfa\n                                \n\n\n\n\n\n                                        Ev, Bah\u00e7e ve Ofis                                     \n\n\n\n\n\n                                        Yap\u0131 Market & Tamirat                                     \n\n\n\n\n\n                                        Tamir, Tadilat Gere\u00e7leri                                     \n\n\n\n\n\n                                        Di\u011fer Tamir Gere\u00e7leri",
+        "shipment": "\u00dccretsiz - Ertesi G\u00fcn Kargo"
+      }, {
+        "name": "Kombi Alt Ba\u011flant\u0131 Seti 8'li D\u00fcz",
+        "price": "38,00                                                                                                        TL",
+        "category": "Ana Sayfa\n                                \n\n\n\n\n\n                                        Ev, Bah\u00e7e ve Ofis                                     \n\n\n\n\n\n                                        Yap\u0131 Market & Tamirat                                     \n\n\n\n\n\n                                        Yap\u0131 Malzemeleri, Nalburiye                                     \n\n\n\n\n\n                                        Di\u011fer Yap\u0131 Malzemeleri",
+        "shipment": "\u00dccretsiz - Ertesi G\u00fcn Kargo"
+      }, {
+        "name": "LYK\u0130A KL\u0130MA PARF\u00dcM\u00dc",
+        "price": "29,90                                                                                                        TL",
+        "category": "Ana Sayfa\n                                \n\n\n\n\n\n                                        Elektronik                                     \n\n\n\n\n\n                                        Beyaz E\u015fya & K\u00fc\u00e7\u00fck Ev Aletleri                                     \n\n\n\n\n\n                                        Beyaz E\u015fya                                     \n\n\n\n\n\n                                        Yedek Par\u00e7a ve Aksesuar",
+        "shipment": "\u00dccretsiz - Ertesi G\u00fcn Kargo"
+      }, {
+        "name": "Kombi Alt Ba\u011flant\u0131 Seti 8 li Dirsekli",
+        "price": "38,00                                                                                                        TL",
+        "category": "Ana Sayfa\n                                \n\n\n\n\n\n                                        Ev, Bah\u00e7e ve Ofis                                     \n\n\n\n\n\n                                        Yap\u0131 Market & Tamirat                                     \n\n\n\n\n\n                                        Yap\u0131 Malzemeleri, Nalburiye                                     \n\n\n\n\n\n                                        Di\u011fer Yap\u0131 Malzemeleri",
+        "shipment": "\u00dccretsiz - Ertesi G\u00fcn Kargo"
+      }, {
+        "name": "Kombi Gaz Flexi 50 CM",
+        "price": "20,00                                                                                                        TL",
+        "category": "Ana Sayfa\n                                \n\n\n\n\n\n                                        Ev, Bah\u00e7e ve Ofis                                     \n\n\n\n\n\n                                        Yap\u0131 Market & Tamirat                                     \n\n\n\n\n\n                                        Tamir, Tadilat Gere\u00e7leri                                     \n\n\n\n\n\n                                        Di\u011fer Tamir Gere\u00e7leri",
+        "shipment": "\u00dccretsiz - Ertesi G\u00fcn Kargo"
+      }, {
+        "name": "Bosch Yo\u011fu\u015fmal\u0131 Orjinal 45 Derece Kombi Baca Dirse\u011fi",
+        "price": "125,00                                                                                                        TL",
+        "category": "Ana Sayfa\n                                \n\n\n\n\n\n                                        Di\u011fer Her \u015eey                                     \n\n\n\n\n\n                                        Di\u011fer Her \u015eey",
+        "shipment": "\u00dccretsiz - 2-3 g\u00fcn i\u00e7inde kargo"
+      }, {
+        "name": "Bosch Yo\u011fu\u015fmal\u0131 Orjinal 50 CM Kombi Baca Uzatmas\u0131",
+        "price": "100,00                                                                                                        TL",
+        "category": "Ana Sayfa\n                                \n\n\n\n\n\n                                        Di\u011fer Her \u015eey                                     \n\n\n\n\n\n                                        Di\u011fer Her \u015eey",
+        "shipment": "\u00dccretsiz - 2-3 g\u00fcn i\u00e7inde kargo"
+      }, {
+        "name": "Bosch Hermetik orjinal 90 Derece Kombi Baca Dirse\u011fi",
+        "price": "100,00                                                                                                        TL",
+        "category": "Ana Sayfa\n                                \n\n\n\n\n\n                                        Di\u011fer Her \u015eey                                     \n\n\n\n\n\n                                        Di\u011fer Her \u015eey",
+        "shipment": "\u00dccretsiz - 2-3 g\u00fcn i\u00e7inde kargo"
+      }, {
+        "name": "Buderus Hermetik Orjinal 45 Derece Kombi Baca Dirse\u011fi",
+        "price": "100,00                                                                                                        TL",
+        "category": "Ana Sayfa\n                                \n\n\n\n\n\n                                        Di\u011fer Her \u015eey                                     \n\n\n\n\n\n                                        Di\u011fer Her \u015eey",
+        "shipment": "\u00dccretsiz - 2-3 g\u00fcn i\u00e7inde kargo"
+      }, {
+        "name": "Buderus Hermetik 75cm Kombi Baca Uzatmas\u0131",
+        "price": "125,00                                                                                                        TL",
+        "category": "Ana Sayfa\n                                \n\n\n\n\n\n                                        Di\u011fer Her \u015eey                                     \n\n\n\n\n\n                                        Di\u011fer Her \u015eey",
+        "shipment": "\u00dccretsiz - 2-3 g\u00fcn i\u00e7inde kargo"
+      }, {
+        "name": "Buderus Yo\u011fu\u015fmal\u0131 Orjinal 90 Derece Kombi Baca Dirse\u011fi",
+        "price": "125,00                                                                                                        TL",
+        "category": "Ana Sayfa\n                                \n\n\n\n\n\n                                        Di\u011fer Her \u015eey                                     \n\n\n\n\n\n                                        Di\u011fer Her \u015eey",
+        "shipment": "\u00dccretsiz - 2-3 g\u00fcn i\u00e7inde kargo"
+      }, {
+        "name": "Bosch Yo\u011fu\u015fmal\u0131 Orjinal 100CM Kombi Baca Uzatmas\u0131",
+        "price": "150,00                                                                                                        TL",
+        "category": "Ana Sayfa\n                                \n\n\n\n\n\n                                        Di\u011fer Her \u015eey                                     \n\n\n\n\n\n                                        Di\u011fer Her \u015eey",
+        "shipment": "\u00dccretsiz - 2-3 g\u00fcn i\u00e7inde kargo"
+      }, {
+        "name": "Bosch Hermetik Orjinal 45 Derece Kombi Baca Dirse\u011fi",
+        "price": "115,00                                                                                                        TL",
+        "category": "Ana Sayfa\n                                \n\n\n\n\n\n                                        Di\u011fer Her \u015eey                                     \n\n\n\n\n\n                                        Di\u011fer Her \u015eey",
+        "shipment": "\u00dccretsiz - 2-3 g\u00fcn i\u00e7inde kargo"
+      }, {
+        "name": "Demird\u00f6k\u00fcm Exacontrol 7 Kablolu Oda Termostat\u0131",
+        "price": "185,00                                                                                                        TL",
+        "category": "Ana Sayfa\n                                \n\n\n\n\n\n                                        Elektronik                                     \n\n\n\n\n\n                                        Beyaz E\u015fya & K\u00fc\u00e7\u00fck Ev Aletleri                                     \n\n\n\n\n\n                                        Is\u0131tma, So\u011futma Sistemi                                     \n\n\n\n\n\n                                        Termostat                                     \n\n\n\n\n\n                                        Demird\u00f6k\u00fcm Termostat",
+        "shipment": "\u00dccretsiz - Ertesi G\u00fcn Kargo"
+      }, {
+        "name": "DEM\u0130RD\u00d6K\u00dcM RF 6001 KABLOSUZ ODA TERMOSTATI",
+        "price": "145,00                                                                                                        TL",
+        "category": "Ana Sayfa\n                                \n\n\n\n\n\n                                        Elektronik                                     \n\n\n\n\n\n                                        Beyaz E\u015fya & K\u00fc\u00e7\u00fck Ev Aletleri                                     \n\n\n\n\n\n                                        Is\u0131tma, So\u011futma Sistemi                                     \n\n\n\n\n\n                                        Termostat                                     \n\n\n\n\n\n                                        Demird\u00f6k\u00fcm Termostat",
+        "shipment": "Al\u0131c\u0131 \u00d6der - Ayn\u0131 G\u00fcn Kargo                                 \nT\u00fcm T\u00fcrkiye: 6,00 TL"
+      }, {
+        "name": "Bosch Hermetik 75cm Kombi Baca Uzatmas\u0131",
+        "price": "140,00                                                                                                        TL",
+        "category": "Ana Sayfa\n                                \n\n\n\n\n\n                                        Di\u011fer Her \u015eey                                     \n\n\n\n\n\n                                        Di\u011fer Her \u015eey",
+        "shipment": "\u00dccretsiz - 2-3 g\u00fcn i\u00e7inde kargo"
+      }]
+    }
+  }, {
+    "comments": {
+      "comment": [{
+        "reviewer": "hakanosman14 ( 6 )",
+        "dateTime": "18/07/2018",
+        "productName": "Demird\u00f6k\u00fcm Nitron Condense P 24 Yo\u011fu\u015fmal\u0131 Kombi (20.000 kcal)",
+        "mood": "Mutlu",
+        "text": "\n"
+      }, {
+        "reviewer": "selimsenler ( 51 )",
+        "dateTime": "18/07/2018",
+        "productName": "Demird\u00f6k\u00fcm Nitron Condense P 24 Yo\u011fu\u015fmal\u0131 Kombi (20.000 kcal)",
+        "mood": "Mutlu",
+        "text": "\n"
+      }, {
+        "reviewer": "fotomarko ( 15 )",
+        "dateTime": "18/07/2018",
+        "productName": "Demird\u00f6k\u00fcm Nitron Condense P 24 Yo\u011fu\u015fmal\u0131 Kombi (20.000 kcal)",
+        "mood": "Mutlu",
+        "text": "\n                                        cok te\u015fek\u00fcrler h\u0131zl\u0131 kargo sorunsuz \u00fcr\u00fcn \n                                    "
+      }, {
+        "reviewer": "ilkersahin23 ( 18 )",
+        "dateTime": "17/07/2018",
+        "productName": "Demird\u00f6k\u00fcm Nitron Condense P 24 Yo\u011fu\u015fmal\u0131 Kombi (20.000 kcal)",
+        "mood": "Mutlu",
+        "text": "\n"
+      }, {
+        "reviewer": "akin_yusuf13 ( 13 )",
+        "dateTime": "16/07/2018",
+        "productName": "Demird\u00f6k\u00fcm Nitron Condense P 24 Yo\u011fu\u015fmal\u0131 Kombi (20.000 kcal)",
+        "mood": "Mutlu",
+        "text": "\n"
+      }, {
+        "reviewer": "kirazozkan ( 30 )",
+        "dateTime": "15/07/2018",
+        "productName": "Viessmann Vitopend 100 Hermetik Kombi 24kw (20.000kcal)",
+        "mood": "Mutlu",
+        "text": "\n                                        Sorunsuz bir al\u0131\u015fveri\u015f oldu. Sat\u0131\u015f sonras\u0131 hizmet \u00e7ok iyi. Te\u015fekk\u00fcrler \n                                    "
+      }]
+    }
+  }]
+}
