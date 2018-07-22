@@ -147,12 +147,15 @@ sayfaSayisi = 0
 var = 1
 daTeSayisi = 0 #2018 içeren Date sayisi
 
+storelink = "https://profil.gittigidiyor.com/" + storename
+json_data_store = { storelink: [] }
 
-filename = storename + "_comments" + ".json"
+#filename = storename + "_comments" + ".json"
 
 comments_array, reviewers_array, dates_array,productsName_array, mood_array = [], [], [], [],[]
-if os.path.isfile(filename):
-	with open(filename) as data_file:
+
+if os.path.isfile(filename_store):
+	with open(filename_store) as data_file:
 		dataArray = []
 		dataArray = json.load(data_file)
 		file = open(fileTXT, "r")
@@ -161,6 +164,7 @@ if os.path.isfile(filename):
 			oldGun = oldDate[:2]
 			oldAy = oldDate[3:5]
 			oldYıl = oldDate[6:]
+		print(str(dateInput)+"-"+str(oldDate)+"arası append ediliyor...")
 		j2 = 1
 		q2 = 0
 		while j2 < 1000:
@@ -256,108 +260,107 @@ if os.path.isfile(filename):
 						j2 = 1000
 						break
 				
-			q2=0	
+			q2=0
+	
+	with open(filename_store, mode='a+', encoding='utf-8') as feedsjson:
+		json_data_comments_new = { "comments": { "comment" : [{"reviewer": r, "dateTime": d, "productName": p , "mood" : m, "text": t} for r,d,p,m,t in zip (reviewers_array,dates_array,productsName_array,mood_array,comments_array)]}}
+		json_data_store[storelink].append(json_data_comments_new)
+		json.dump(json_data_store, feedsjson)
+
+	file = open(fileTXT,"w")
+	file.write(dateInput + '\n') 
 
 
-
-file = open(fileTXT,"w")
-file.write(dateInput + '\n') 
-
-while var < 1000:
-	x = str(var)
-	url_Comments= "https://profil.gittigidiyor.com/"+storename+"/aldigi-yorumlar/satis?sf=" + x + "#yorum"
-	r_Comments = requests.get(url_Comments)
-	soup_Comments = BeautifulSoup(r_Comments.content, "lxml")
-	dates_kontrol = soup_Comments.find_all("p",attrs={"class":"mt10"})
-	for daTe in dates_kontrol:
-		daTe_str = str(daTe.text)
-		if "/2017" in daTe_str:
-			var = 1000
-			break
-		if "/2018" not in daTe_str:
-			continue
-		else:
-			daTeSayisi = daTeSayisi + 1
-			continue
-	sayfaSayisi = sayfaSayisi + 1
-	var = var + 1
-print("Son 6 aylık yorum sayısı:"+" "+str(daTeSayisi))
-#print(sayfaSayisi)
-
-
-comments_array, reviewers_array, dates_array,productsName_array, mood_array = [], [], [], [],[]
-j=1 #sayfa
-q=0 #dateler için
-p=0 #productName için
-while j < sayfaSayisi:
-	m = str(j)
-	url= "https://profil.gittigidiyor.com/"+storename+"/aldigi-yorumlar/satis?sf=" + m + "#yorum"
-	#print(url)
-	r = requests.get(url)
-	soup = BeautifulSoup(r.content, "lxml")
-	dates = soup.find_all("p",attrs={"class":"mt10"})
-	productNames = soup.find_all("a",attrs={"class":"bold"})
-	print(m + ". yorum sayfası işleniyor")
-	j = j + 1
-	for i in range(20):
-		mood = soup.find_all("div",attrs={"class":"col width-1of24 mt5"})[i]
-		reviewer = soup.find_all("p", attrs={"class":"bold"})[i].text
-		comment = soup.find_all("p",attrs={"class":"comment_content"})[i].text
-		comments_array.append(comment)
-		reviewers_array.append(reviewer)
-		stringMood = str(mood)
-		if stringMood.find('prf09') != -1:
-			mood_array.append("Mutlu")
-		elif stringMood.find('prf10') != -1:
-			mood_array.append("Üzgün")
-		else:
-			mood_array.append("Kızgın")
-
-	while q < len(dates):
-		date = soup.find_all("p",attrs={"class":"mt10"})[q].text
-		q = q + 1
-		if "Profil" in date:
-			continue
-		if "/2018" not in date:
-			continue	
-		dateGun = date[:2]
-		dateAy = date[3:5]
-		dateYıl = date[6:]
-		if dateYıl >= yıl:
-			if dateAy > ay:
-				dates_array.append(str(date))
+if not os.path.isfile(filename_store):
+	while var < 1000:
+		x = str(var)
+		url_Comments= "https://profil.gittigidiyor.com/"+storename+"/aldigi-yorumlar/satis?sf=" + x + "#yorum"
+		r_Comments = requests.get(url_Comments)
+		soup_Comments = BeautifulSoup(r_Comments.content, "lxml")
+		dates_kontrol = soup_Comments.find_all("p",attrs={"class":"mt10"})
+		for daTe in dates_kontrol:
+			daTe_str = str(daTe.text)
+			if "/2017" in daTe_str:
+				var = 1000
+				break
+			if "/2018" not in daTe_str:
 				continue
-			if dateAy == ay:
-				if dateGun >= gun:
+			else:
+				daTeSayisi = daTeSayisi + 1
+				continue
+		sayfaSayisi = sayfaSayisi + 1
+		var = var + 1
+	print("Son 6 aylık yorum sayısı:"+" "+str(daTeSayisi))
+	#print(sayfaSayisi)
+
+
+	comments_array, reviewers_array, dates_array,productsName_array, mood_array = [], [], [], [],[]
+	j=1 #sayfa
+	q=0 #dateler için
+	p=0 #productName için
+	while j < sayfaSayisi:
+		m = str(j)
+		url= "https://profil.gittigidiyor.com/"+storename+"/aldigi-yorumlar/satis?sf=" + m + "#yorum"
+		#print(url)
+		r = requests.get(url)
+		soup = BeautifulSoup(r.content, "lxml")
+		dates = soup.find_all("p",attrs={"class":"mt10"})
+		productNames = soup.find_all("a",attrs={"class":"bold"})
+		print(m + ". yorum sayfası işleniyor")
+		j = j + 1
+		for i in range(20):
+			mood = soup.find_all("div",attrs={"class":"col width-1of24 mt5"})[i]
+			reviewer = soup.find_all("p", attrs={"class":"bold"})[i].text
+			comment = soup.find_all("p",attrs={"class":"comment_content"})[i].text
+			comments_array.append(comment)
+			reviewers_array.append(reviewer)
+			stringMood = str(mood)
+			if stringMood.find('prf09') != -1:
+				mood_array.append("Mutlu")
+			elif stringMood.find('prf10') != -1:
+				mood_array.append("Üzgün")
+			else:
+				mood_array.append("Kızgın")
+
+		while q < len(dates):
+			date = soup.find_all("p",attrs={"class":"mt10"})[q].text
+			q = q + 1
+			if "Profil" in date:
+				continue
+			if "/2018" not in date:
+				continue	
+			dateGun = date[:2]
+			dateAy = date[3:5]
+			dateYıl = date[6:]
+			if dateYıl >= yıl:
+				if dateAy > ay:
 					dates_array.append(str(date))
 					continue
-		j = sayfaSayisi
-		break
+				if dateAy == ay:
+					if dateGun >= gun:
+						dates_array.append(str(date))
+						continue
+			j = sayfaSayisi
+			break
 
 					
 
-	while p < len(productNames):
-		productName = soup.find_all("a",attrs={"class":"bold"})[p].text
-		p = p + 1
-		if "Tüm" in productName:
-			continue
-		productsName_array.append(productName)
-	q=0
-	p=0
+		while p < len(productNames):
+			productName = soup.find_all("a",attrs={"class":"bold"})[p].text
+			p = p + 1
+			if "Tüm" in productName:
+				continue
+			productsName_array.append(productName)
+		q=0
+		p=0
 
-print("Girilen tarihteki yorum sayısı:" + " " +str(len(dates_array)))
+	print("Girilen tarihteki yorum sayısı:" + " " +str(len(dates_array)))
 
-file = open(fileTXT,"w")
-file.write(dateInput + '\n') 
-
-
-filename_comments = storename + "_comments" + ".json"
-file_comments = open(filename_comments, "w")
-
-json_data_comments = { "comments": { "comment" : [{"reviewer": r, "dateTime": d, "productName": p , "mood" : m, "text": t} for r,d,p,m,t in zip (reviewers_array,dates_array,productsName_array,mood_array,comments_array)]}}
-with open(filename_comments,'w') as f:
-	json.dump(json_data_comments, f,ensure_ascii=False)
+	file = open(fileTXT,"w")
+	file.write(dateInput + '\n') 
 
 
-
-	
+	with open(filename_store, mode='w', encoding='utf-8') as feedsjson:
+		json_data_comments = { "comments": { "comment" : [{"reviewer": r, "dateTime": d, "productName": p , "mood" : m, "text": t} for r,d,p,m,t in zip (reviewers_array,dates_array,productsName_array,mood_array,comments_array)]}}
+		json_data_store[storelink].append(json_data_comments)
+		json.dump(json_data_store, feedsjson)
