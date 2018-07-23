@@ -253,7 +253,10 @@ with open(append_file) as myfileappend:
 
 #APPEND STARTS HERE
 if canAppend == "canAppend":
-	file = open(fileTXT, "r")
+	with open(filename) as data_file:
+		json_data_store = json.load(data_file)
+		file = open(fileTXT, "r")
+
 	with open(fileTXT) as myfile:
 		oldDate = list(myfile)[-1]
 		oldGun = oldDate[:2]
@@ -355,8 +358,10 @@ if canAppend == "canAppend":
 					break
 		q2=0
 
-	with open(filename_store, mode='w', encoding='utf-8') as feedsjson:
-		#??????????????
+	with open(filename, mode='w', encoding='utf-8') as feedsjson:
+		json_data_comments_new = { "comments": { "comment" : [{"reviewer": r, "dateTime": d, "productName": p , "mood" : m, "text": t} for r,d,p,m,t in zip (reviewers_array,dates_array,productsName_array,mood_array,comments_array)]}}
+		json_data_store[storelink].append(json_data_comments_new)
+		json.dump(json_data_store, feedsjson)
 	print("Exiting..")
 
 	file = open(fileTXT,"w")
