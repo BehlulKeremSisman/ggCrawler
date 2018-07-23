@@ -7,9 +7,10 @@
 
 <?php
 
+
+
 $string = file_get_contents("kombidukkani.json");
 $json_store = json_decode($string, true);
-
 
 foreach ($json_store as $store => $json_store) {
     $str1 = $json_store[0]['numberOfReviewsMonths']; ?>
@@ -48,10 +49,11 @@ foreach ($json_store as $store => $json_store) {
     <p>Criter1: <?php echo $str1  ?></p>
 
 <?php
-  for($i=0; $i<67; $i++){
+  $size_products = sizeof($json_store[1]['products']['product']);
+  for($i=0; $i<$size_products; $i++){
     echo "-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------";
     $str1 = $json_store[1]['products']['product'][$i]['name']; ?>
-    <p>Name: <?php echo $str1  ?></p>
+    <p><?php echo ($i+1).". ürün;" ?> <br><br />Name: <?php echo $str1  ?></p>
    <?php $str1 = $json_store[1]['products']['product'][$i]['category']; ?>
     <p>Category: <?php echo $str1  ?></p><?php
    $str1 = $json_store[1]['products']['product'][$i]['price']; ?>
@@ -60,19 +62,23 @@ foreach ($json_store as $store => $json_store) {
      <p>Shipment: <?php echo $str1  ?></p><?php
    }
 
-
-  for($i=0; $i<7; $i++){
-    echo "***********************************************************************************************************************************************************************************";
-    $str1 = $json_store[2]['comments']['comment'][$i]['reviewer']; ?>
-    <p>Reviewer: <?php echo $str1  ?></p>
-   <?php $str1 = $json_store[2]['comments']['comment'][$i]['dateTime']; ?>
-    <p>Datetime: <?php echo $str1  ?></p><?php
-    $str1 = $json_store[2]['comments']['comment'][$i]['productName']; ?>
-    <p>Productname: <?php echo $str1  ?></p><?php
-   $str1 = $json_store[2]['comments']['comment'][$i]['mood']; ?>
-    <p>Mood: <?php echo $str1  ?></p><?php
-    $str1 = $json_store[2]['comments']['comment'][$i]['text']; ?>
-     <p>Text: <?php echo $str1  ?></p><?php
+   for($k=2; $k<20; $k++){
+     $size_comments = sizeof($json_store[$k]['comments']['comment']);
+     if($json_store[$k] != NULL){
+      for($i=0; $i<$size_comments; $i++){
+        echo "***********************************************************************************************************************************************************************************";
+        $str1 = $json_store[$k]['comments']['comment'][$i]['reviewer']; ?>
+        <p><?php echo ($i+1).". yorum;" ?> <br><br />Reviewer: <?php echo $str1  ?></p>
+       <?php $str1 = $json_store[$k]['comments']['comment'][$i]['dateTime']; ?>
+        <p>Datetime: <?php echo $str1  ?></p><?php
+        $str1 = $json_store[$k]['comments']['comment'][$i]['productName']; ?>
+        <p>Productname: <?php echo $str1  ?></p><?php
+       $str1 = $json_store[$k]['comments']['comment'][$i]['mood']; ?>
+        <p>Mood: <?php echo $str1  ?></p><?php
+        $str1 = $json_store[$k]['comments']['comment'][$i]['text']; ?>
+         <p>Text: <?php echo $str1  ?></p><?php
+       }
+     }
    }
 }
 ?>
