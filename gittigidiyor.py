@@ -201,9 +201,9 @@ if canAppend == "firstRun":
 			if stringMood.find('prf09') != -1:
 				mood_array.append("Mutlu")
 			elif stringMood.find('prf10') != -1:
-				mood_array.append("Üzgün")
+				mood_array.append("Uzgun")
 			else:
-				mood_array.append("Kızgın")
+				mood_array.append("Kizgin")
 
 		while q < len(dates):
 			date = soup.find_all("p",attrs={"class":"mt10"})[q].text
@@ -305,9 +305,9 @@ if canAppend == "canAppend":
 						if stringMood.find('prf09') != -1:
 							mood_array.append("Mutlu")
 						elif stringMood.find('prf10') != -1:
-							mood_array.append("Üzgün")
+							mood_array.append("Uzgun")
 						else:
-							mood_array.append("Kızgın")
+							mood_array.append("Kizgin")
 						continue
 			if ay < oldAy:
 				if dateAy == ay:
@@ -319,9 +319,9 @@ if canAppend == "canAppend":
 						if stringMood.find('prf09') != -1:
 							mood_array.append("Mutlu")
 						elif stringMood.find('prf10') != -1:
-							mood_array.append("Üzgün")
+							mood_array.append("Uzgun")
 						else:
-							mood_array.append("Kızgın")
+							mood_array.append("Kizgin")
 						continue
 
 					if dateGun >= gun:
@@ -332,9 +332,9 @@ if canAppend == "canAppend":
 						if stringMood.find('prf09') != -1:
 							mood_array.append("Mutlu")
 						elif stringMood.find('prf10') != -1:
-							mood_array.append("Üzgün")
+							mood_array.append("Uzgun")
 						else:
-							mood_array.append("Kızgın")
+							mood_array.append("Kizgin")
 						continue
 				if dateAy > ay:
 					if dateGun < oldGun:
@@ -345,9 +345,9 @@ if canAppend == "canAppend":
 						if stringMood.find('prf09') != -1:
 							mood_array.append("Mutlu")
 						elif stringMood.find('prf10') != -1:
-							mood_array.append("Üzgün")
+							mood_array.append("Uzgun")
 						else:
-							mood_array.append("Kızgın")
+							mood_array.append("Kizgin")
 						continue
 			if dateAy < ay:
 				j2 = 1000
