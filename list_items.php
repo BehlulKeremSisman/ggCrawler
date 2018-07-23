@@ -6,8 +6,8 @@
 <body>
 
 <?php
-
-$string = file_get_contents("kombidukkani.json");
+$isim = $_POST['magazaIsmi'].".json";
+$string = file_get_contents($isim);
 $json_store = json_decode($string, true);
 
 foreach ($json_store as $store => $json_store) {

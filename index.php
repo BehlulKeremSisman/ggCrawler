@@ -5,7 +5,21 @@
 
 <style>
 
-div.buttonlar {
+input {
+
+	 text-align: left;
+	 margin-top: 5%;
+	 width: 20%;
+	 padding: 12px 20px;
+}
+
+div.magaza {
+	
+	 text-align: center;
+	 margin-top: 5%;
+}
+
+div.magazaGrafik {
 	
 	 text-align: center;
 	 margin-top: 5%;
@@ -41,9 +55,18 @@ div.baslik {
 <div class = "baslik">
 <h>www.gittigidiyor.com Mağazalar Ve Ürünlerinin İstatistiksel Analizi</h>
 </div>
-<div class = "buttonlar">
-<input type="button" value="Tüm ürünler" class="btn btn-primary btn-lg" id="list" onClick="document.location.href='list_items.php'" />
-<input type="button" value="Grafiksel Analiz" class="btn btn-primary btn-lg" id="Statistics" onClick="document.location.href='statistics.php'" />
+
+<form action="list_items.php" method="post">
+<div class = "magaza">
+<input type="text" name="magazaIsmi" value="Magaza Giriniz...">
+<input type="submit" name="submit" value="Magaza Verileri" class="btn btn-primary btn-lg" id="list" onClick="document.location.href='list_items.php'" />
+</div>
+</form>
+
+<form action="statistics.php" method="post">
+<div class = "magazaGrafik">
+<input type="text" name="magazaGrafik" value="Magaza Giriniz...">
+<input type="submit" name="submit" value="Grafiksel Analiz" class="btn btn-primary btn-lg" id="Statistics" onClick="document.location.href='statistics.php'" />
 </div>
 
 <div class = "aciklama">
