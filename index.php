@@ -14,13 +14,13 @@ input {
 }
 
 div.magaza {
-	
+
 	 text-align: center;
 	 margin-top: 5%;
 }
 
 div.magazaGrafik {
-	
+
 	 text-align: center;
 	 margin-top: 5%;
 }
@@ -30,13 +30,13 @@ div.aciklama {
 	 margin-top: 8%;
 	font-size: 125%;
 
-} 
+}
 
 div.baslik {
       font-size: 175%;
       color: blue;
       text-align: center;
-      margin-top: 4%;	
+      margin-top: 4%;
 }
 
 
@@ -53,7 +53,7 @@ div.baslik {
 <body>
 
 <div class = "baslik">
-<h>www.gittigidiyor.com Mağazalar Ve Ürünlerinin İstatistiksel Analizi</h>
+<h>www.gittigidiyor.com Mağazalar ve Ürünlerinin İstatistiksel Analizi</h>
 </div>
 
 <form action="list_items.php" method="post">
@@ -70,7 +70,7 @@ div.baslik {
 </div>
 
 <div class = "aciklama">
-<p>Tüm Ürünler Buttonuna Tıklanarak Mağazanın Tüm Ürünlerine Ulaşılabilir...</p>
+<p>Mağaza Verileri Tıklanarak Mağazanın Verilerine Ulaşılabilir...</p>
 <p>Grafiksel Analiz Buttonuna Tıklanarak Ürünlerin Fiyatlarına Göre Grafiksel Analizine Ulaşılabilir...</p>
 </div>
 
