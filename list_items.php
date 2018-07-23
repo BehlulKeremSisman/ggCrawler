@@ -1,13 +1,11 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Page Title</title>
+<title>List Items</title>
 </head>
 <body>
 
 <?php
-
-
 
 $string = file_get_contents("kombidukkani.json");
 $json_store = json_decode($string, true);
