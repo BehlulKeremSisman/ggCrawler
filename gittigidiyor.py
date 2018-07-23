@@ -290,6 +290,13 @@ if canAppend == "canAppend":
 				continue
 			dateGun = (date[:2])
 			dateAy = (date[3:5])
+			if dateAy < ay:
+				j2 = 1000
+				break
+			if dateAy == ay:
+				if dateGun < gun:
+					j2 = 1000
+					break
 			if dateAy > oldAy:
 				continue
 			if dateAy == oldAy:
@@ -349,13 +356,6 @@ if canAppend == "canAppend":
 						else:
 							mood_array.append("Kizgin")
 						continue
-			if dateAy < ay:
-				j2 = 1000
-				break
-			if dateAy == ay:
-				if dateGun < gun:
-					j2 = 1000
-					break
 		q2=0
 
 	with open(filename_store, mode='w', encoding='utf-8') as feedsjson:
